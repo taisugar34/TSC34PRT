@@ -1,0 +1,648 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-TW">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>目前機器狀態</title>
+<link rel="stylesheet" title="標準" href="../../web/css/def_exp_body_i.css" type="text/css">
+<link rel="alternate stylesheet" title="簡易" href="../../web/css/sim_exp_body_i.css" type="text/css">
+<!--[if IE 6]>
+<style>
+body.bodypage {
+   font-size : 80%;
+}
+div.bodypage {
+   font-size : 125%;
+}
+</style>
+<![endif]-->
+<link rel="contents" href="index.htm">
+<link rel="prev" href="0134.htm"><link rel="next" href="0136.htm">
+<script type="text/javascript" language="JavaScript1.2" src="../../booklist/js/split.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/cookie.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/honbun-i.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/summary.js"></script>
+<script type="text/javascript" language="JavaScript1.2">
+<!--
+read_css();
+// -->
+</script>
+</head>
+<body class="bodypage" onLoad="initialize();">
+<div class="bodypage">
+<div id="headertable">
+<div class="header" id="jump"><a href="#headerend"><img src="../../web/gen/jump_space.gif" alt="略過標頭" width="1" height="52"></a></div>
+<div class="header" id="logo"><a href="http://www.ricoh.com/"><img src="../../manual_common_image/lnricoh.gif" title="回到RICOH首頁" alt="RICOH" width="130" height="54"></a><img src="../../common/image/logo-p.gif" alt="Aficio MP C2051/C2551" width="380" height="54"></div>
+
+<div class="header" id="navi"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊"><img src="../../web/gen/i_index.gif" alt="" width="22" height="15"><span class="headernavitext">參考手冊</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="javascript:back_to_index()" title="內容"><img src="../../web/gen/i_book.gif" alt="" width="22" height="15"><span class="headernavitext">內容</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0134.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="headernavitext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0136.htm" title="下一個主題"><span class="headernavitext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="header" id="search"><form name="search" onSubmit="SearchWord(); return false;"><label class="headersearchtext" for="seek" accesskey="0"><input class="headersearchtext" type="text" id="seek" name="seek" value="" size="16" maxlength="128" tabindex="0"></label><a class="linkimage" onmouseover="Mover('btn','sea','1')" onmouseout="Mout('btn','sea','1')" href="javascript:SearchWord();"><img src="../../web/gen/zh-tw-search.gif" title="開始搜尋" alt="搜尋" name="btnsea1" width="50" height="20"></a></form></div>
+<div class="header" id="pref"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="#" onclick="goto_preference('int', 'preferences.htm')" title="變更參考手冊設定"><img src="../../web/gen/i_pref.gif" alt="" width="21" height="15"><span class="headernavitext">設定</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="help.htm" title="說明"><img src="../../web/gen/i_help.gif" alt="說明" width="15" height="15"></a></div>
+<div class="header" id="headerend">&nbsp;</div>
+</div>
+<p class="breadcrumbs"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊">首頁</a>&nbsp;&gt;&nbsp;<a href="javascript:back_to_index()" title="內容">網路及系統設定參考手冊</a>&nbsp;&gt;&nbsp;<a href="index_chap_04.htm">監視與設定本機</a>&nbsp;&gt;&nbsp;<a href="0134.htm">透過網路獲取機器資訊</a>&nbsp;&gt;&nbsp;目前機器狀態</p>
+<div class="moduleh1" id="replace">
+<h1>目前機器狀態</h1><div class="summary"><p>本節說明如何查看本機的狀態和顯示的項目。視本機上安裝的選購件而定，某些項目可能不會顯示。</p></div><ul>
+<li><p>UNIX：使用「stat」參數、「rsh」、「rcp」、「ftp」及「sftp」命令。&quot;無法在Windows環境下，使用「rsh」與「rcp」。</p></li>
+<li><p>telnet：使用「status」命令。</p></li>
+</ul>
+<table border="1" frame="box" rules="all" cellpadding="5">
+<tr>
+<th align="center" valign="middle" width="49%"><p>訊息</p></th>
+<th align="center" valign="middle" width="50%"><p>說明</p></th>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Access Restricted</p></td>
+<td align="left" valign="top" width="50%"><p>由於使用者沒有權限，工作已取消。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Access Restricted (Classe-Code)</p></td>
+<td align="left" valign="top" width="50%"><p>由於沒有指定分類碼，工作已取消。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Adjusting...</p></td>
+<td align="left" valign="top" width="50%"><p>機器正在初始化或校正。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Call Service Center</p></td>
+<td align="left" valign="top" width="50%"><p>本機發生故障。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Canceled</p></td>
+<td align="left" valign="top" width="50%"><p>工作已重設。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Canceling Job...</p></td>
+<td align="left" valign="top" width="50%"><p>工作正在重設。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Cannot Eject Original Through</p></td>
+<td align="left" valign="top" width="50%"><p>無法排出原稿。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Card/Counter not inserted</p></td>
+<td align="left" valign="top" width="50%"><p>機器正在等待預付卡或主卡。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Coin or amount not inserted</p></td>
+<td align="left" valign="top" width="50%"><p>本機正在等待硬幣投入。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Coin/Key Counter not inserted</p></td>
+<td align="left" valign="top" width="50%"><p>本機正在等待硬幣或主要計數器。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Configuring...</p></td>
+<td align="left" valign="top" width="50%"><p>正在變更設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Cover Open: ADF</p></td>
+<td align="left" valign="top" width="50%"><p>送稿機已打開。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Cover Open: Duplex Unit</p></td>
+<td align="left" valign="top" width="50%"><p>雙面單元蓋板已打開。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Cover Open: Finisher Front</p></td>
+<td align="left" valign="top" width="50%"><p>裝訂分頁機的前蓋已打開。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Cover Open: Front Cover</p></td>
+<td align="left" valign="top" width="50%"><p>前蓋已打開。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Cover Open: Lower Right Cover</p></td>
+<td align="left" valign="top" width="50%"><p>右下蓋已打開。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Cover Open: Right Cover</p></td>
+<td align="left" valign="top" width="50%"><p>右蓋已打開。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Data Size Error</p></td>
+<td align="left" valign="top" width="50%"><p>發生資料大小錯誤。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Empty: Black Toner</p></td>
+<td align="left" valign="top" width="50%"><p>黑色碳粉匣幾乎用完。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Empty: Cyan Toner</p></td>
+<td align="left" valign="top" width="50%"><p>青色碳粉匣幾乎用完。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Empty: Magenta Toner</p></td>
+<td align="left" valign="top" width="50%"><p>洋紅色碳粉匣幾乎用完。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Empty: Yellow Toner</p></td>
+<td align="left" valign="top" width="50%"><p>黃色碳粉匣幾乎用完。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Energy Saver Mode</p></td>
+<td align="left" valign="top" width="50%"><p>機器處在節電模式。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Error</p></td>
+<td align="left" valign="top" width="50%"><p>發生錯誤。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Error: Address Book</p></td>
+<td align="left" valign="top" width="50%"><p>通訊錄的資料發生錯誤。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Error: Command Transmission</p></td>
+<td align="left" valign="top" width="50%"><p>機器發生錯誤。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Error: Ethernet Board</p></td>
+<td align="left" valign="top" width="50%"><p>乙太網路卡發生錯誤。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Error: HDD</p></td>
+<td align="left" valign="top" width="50%"><p>發生硬碟機錯誤。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Error: Media Link Board</p></td>
+<td align="left" valign="top" width="50%"><p>檔案格式轉換器發生錯誤。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Error: Memory Switch</p></td>
+<td align="left" valign="top" width="50%"><p>記憶體切換發生錯誤。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Error: Optional Font</p></td>
+<td align="left" valign="top" width="50%"><p>本機的字型檔案發生錯誤。 </p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Error: Parallel I/F Board</p></td>
+<td align="left" valign="top" width="50%"><p>平行介面發生錯誤。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Error: PDL</p></td>
+<td align="left" valign="top" width="50%"><p>頁面說明語言發生錯誤。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Error: Rem.Certificate Renewal</p></td>
+<td align="left" valign="top" width="50%"><p>遠端伺服器更新過程中發生錯誤。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Error: USB Interface</p></td>
+<td align="left" valign="top" width="50%"><p>USB介面發生錯誤。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Error: Wireless Board</p></td>
+<td align="left" valign="top" width="50%"><p>無線介面卡發生錯誤。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Error: Wireless Card</p></td>
+<td align="left" valign="top" width="50%"><p>啟動時未插入無線卡，或在啟動後取出無線卡。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Exceed Stapling Limit</p></td>
+<td align="left" valign="top" width="50%"><p>列印超過了裝訂限制。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Full: Finisher Shift Tray</p></td>
+<td align="left" valign="top" width="50%"><p>裝訂分頁機的位移接紙盤已滿。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Full: Hole Punch Receptacle</p></td>
+<td align="left" valign="top" width="50%"><p>打孔單元的打孔容器已滿。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Full: Internal Tray 1</p></td>
+<td align="left" valign="top" width="50%"><p>內部接紙盤1已滿。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Full: Waste Toner</p></td>
+<td align="left" valign="top" width="50%"><p>廢棄碳粉已滿。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Full: Waste Toner Bottle 2</p></td>
+<td align="left" valign="top" width="50%"><p>廢棄碳粉瓶2已滿。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Hex Dump Mode</p></td>
+<td align="left" valign="top" width="50%"><p>這是十六進位模式。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Immed. Trans. not connected</p></td>
+<td align="left" valign="top" width="50%"><p>未與傳送的另一方直接連線。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Immediate Transmission Failed</p></td>
+<td align="left" valign="top" width="50%"><p>直接傳送過程中發生錯誤。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>In Use: Copier</p></td>
+<td align="left" valign="top" width="50%"><p>影印機正在使用中。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>In Use: Fax</p></td>
+<td align="left" valign="top" width="50%"><p>傳真機正在使用中。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>In Use: Finisher</p></td>
+<td align="left" valign="top" width="50%"><p>其他功能正在使用裝訂分頁機。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>In Use: Input Tray</p></td>
+<td align="left" valign="top" width="50%"><p>其他功能正在使用輸入紙匣。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>In Use: Staple Unit</p></td>
+<td align="left" valign="top" width="50%"><p>其他功能正在使用裝訂單元。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Independent-supplier Toner</p></td>
+<td align="left" valign="top" width="50%"><p>已安裝非建議的碳粉。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Jobs Suspended</p></td>
+<td align="left" valign="top" width="50%"><p>所有工作已暫停。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Key Card not inserted</p></td>
+<td align="left" valign="top" width="50%"><p>本機正在等待主卡插入。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Key Card/Counter not inserted</p></td>
+<td align="left" valign="top" width="50%"><p>本機器正在等待主卡或主要計數器插入。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Key Counter not inserted</p></td>
+<td align="left" valign="top" width="50%"><p>本機正在等待主要計數器插入。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Loading Toner...</p></td>
+<td align="left" valign="top" width="50%"><p>正在補充碳粉。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Low: Black Toner</p></td>
+<td align="left" valign="top" width="50%"><p>黑色碳粉匣未正確安裝，或者碳粉將要用完。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Low: Cyan Toner</p></td>
+<td align="left" valign="top" width="50%"><p>青色碳粉匣未正確安裝，或者碳粉將要用完。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Low: Magenta Toner</p></td>
+<td align="left" valign="top" width="50%"><p>洋紅色碳粉匣未正確安裝，或者碳粉將要用完。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Low: Yellow Toner</p></td>
+<td align="left" valign="top" width="50%"><p>黃色碳粉匣未正確安裝，或者碳粉將要用完。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Malfunction: Bypass Tray</p></td>
+<td align="left" valign="top" width="50%"><p>手送台發生故障。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Malfunction: Ext.Charge Unit</p></td>
+<td align="left" valign="top" width="50%"><p>外部收費單元發生故障。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Malfunction: Finisher</p></td>
+<td align="left" valign="top" width="50%"><p>裝訂分頁機發生故障。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Malfunction:Lower Paper Tray(s)</p></td>
+<td align="left" valign="top" width="50%"><p>紙匣馬達存在問題。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Malfunction: Output Tray</p></td>
+<td align="left" valign="top" width="50%"><p>接紙盤發生故障。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Malfunction: Punch Unit</p></td>
+<td align="left" valign="top" width="50%"><p>打孔單元發生故障。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Malfunction: Staple Unit</p></td>
+<td align="left" valign="top" width="50%"><p>裝訂單元發生故障。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Malfunction: Tray 1</p></td>
+<td align="left" valign="top" width="50%"><p>紙匣1發生故障。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Malfunction: Tray 2</p></td>
+<td align="left" valign="top" width="50%"><p>紙匣2發生故障。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Malfunction: Tray 3</p></td>
+<td align="left" valign="top" width="50%"><p>紙匣3發生故障。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Malfunction: Tray 4</p></td>
+<td align="left" valign="top" width="50%"><p>紙匣4發生故障。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Memory Low: Copy</p></td>
+<td align="left" valign="top" width="50%"><p>影印過程中發生記憶體不足。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Memory Low: Data Storage</p></td>
+<td align="left" valign="top" width="50%"><p>存放文件時發生記憶體不足。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Memory Low: Fax Scanning</p></td>
+<td align="left" valign="top" width="50%"><p>傳送傳真的過程中發生記憶體不足。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Memory Low: Scanning</p></td>
+<td align="left" valign="top" width="50%"><p>掃描過程中發生記憶體不足。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Miscellaneous Error</p></td>
+<td align="left" valign="top" width="50%"><p>發生其他錯誤。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Mismatch: Paper Size</p></td>
+<td align="left" valign="top" width="50%"><p>指定的紙匣不包含已選取的紙張尺寸。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Mismatch: Paper Size and Type</p></td>
+<td align="left" valign="top" width="50%"><p>指定的紙匣不包含已選取尺寸和種類的紙張。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Mismatch: Paper Type</p></td>
+<td align="left" valign="top" width="50%"><p>指定的紙匣不包含選取的紙張種類。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Near Replacing: Fusing Roller</p></td>
+<td align="left" valign="top" width="50%"><p>請準備新的定著滾輪。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Nearly Full: Waste Toner</p></td>
+<td align="left" valign="top" width="50%"><p>廢棄碳粉瓶將滿。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Nearly Full: WasteToner Bottle2</p></td>
+<td align="left" valign="top" width="50%"><p>廢棄碳粉瓶2將滿。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Need more Staples</p></td>
+<td align="left" valign="top" width="50%"><p>裝訂器的釘書針將用完。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>No Paper: Selected Tray</p></td>
+<td align="left" valign="top" width="50%"><p>指定的紙匣中沒有紙張。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>No Paper: Tray 1</p></td>
+<td align="left" valign="top" width="50%"><p>紙匣1中沒有紙張。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>No Paper: Tray 2</p></td>
+<td align="left" valign="top" width="50%"><p>紙匣2中沒有紙張。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>No Paper: Tray 3</p></td>
+<td align="left" valign="top" width="50%"><p>紙匣3中沒有紙張。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>No Paper: Tray 4</p></td>
+<td align="left" valign="top" width="50%"><p>紙匣4中沒有紙張。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Detected: Black Toner</p></td>
+<td align="left" valign="top" width="50%"><p>黑色碳粉未正確設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Detected: Cyan Toner</p></td>
+<td align="left" valign="top" width="50%"><p>青色碳粉未正確設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Detected: Finisher</p></td>
+<td align="left" valign="top" width="50%"><p>裝訂分頁機未正確設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Detected: Fusing Unit</p></td>
+<td align="left" valign="top" width="50%"><p>定著單元未正確設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Detected: Input Tray</p></td>
+<td align="left" valign="top" width="50%"><p>輸入紙匣未正確設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Detected: Magenta Toner</p></td>
+<td align="left" valign="top" width="50%"><p>洋紅色碳粉未正確設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Detected: PCU (C)</p></td>
+<td align="left" valign="top" width="50%"><p>感光滾筒單元（青色）未正確設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Detected: PCU (K)</p></td>
+<td align="left" valign="top" width="50%"><p>感光滾筒單元（黑色）未正確設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Detected: PCU (M)</p></td>
+<td align="left" valign="top" width="50%"><p>感光滾筒單元（洋紅色）未正確設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Detected: PCU (Y)</p></td>
+<td align="left" valign="top" width="50%"><p>感光滾筒單元（黃色）未正確設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Detected: Tray 1</p></td>
+<td align="left" valign="top" width="50%"><p>紙匣1未正確設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Detected: Tray 2</p></td>
+<td align="left" valign="top" width="50%"><p>紙匣2未正確設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Detected: Tray 3</p></td>
+<td align="left" valign="top" width="50%"><p>紙匣3未正確設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Detected: Tray 4</p></td>
+<td align="left" valign="top" width="50%"><p>紙匣4未正確設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Detected: WasteToner Bottle</p></td>
+<td align="left" valign="top" width="50%"><p>廢棄碳粉瓶未正確設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Detected: Yellow Toner</p></td>
+<td align="left" valign="top" width="50%"><p>黃色碳粉未正確設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Detected: Int.Transfer Unit</p></td>
+<td align="left" valign="top" width="50%"><p>內部轉寫單元未正確設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Reached, Data Deleted</p></td>
+<td align="left" valign="top" width="50%"><p>已刪除無法到達的工作。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Not Reached, Data Stored</p></td>
+<td align="left" valign="top" width="50%"><p>已儲存無法到達的資料。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Offline</p></td>
+<td align="left" valign="top" width="50%"><p>機器離線。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Original on Exposure Glass</p></td>
+<td align="left" valign="top" width="50%"><p>原稿留在曝光玻璃上。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Panel Off Mode</p></td>
+<td align="left" valign="top" width="50%"><p>機器處在面板關閉模式。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Panel Off Mode&gt;&gt;Printing ava.</p></td>
+<td align="left" valign="top" width="50%"><p>機器處在控制面板關閉模式。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Paper in Duplex Unit</p></td>
+<td align="left" valign="top" width="50%"><p>紙張留在雙面單元中。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Paper in Finisher</p></td>
+<td align="left" valign="top" width="50%"><p>紙張留在裝訂分頁機中。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Paper Misfeed: ADF</p></td>
+<td align="left" valign="top" width="50%"><p>送稿機中夾紙。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Paper Misfeed: Duplex Unit</p></td>
+<td align="left" valign="top" width="50%"><p>雙面單元中發生夾紙。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Paper Misfeed: Finisher</p></td>
+<td align="left" valign="top" width="50%"><p>裝訂分頁機中發生夾紙。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Paper Misfeed: Right Tray</p></td>
+<td align="left" valign="top" width="50%"><p>右側接紙盤中發生夾紙。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Paper Misfeed: Input Tray</p></td>
+<td align="left" valign="top" width="50%"><p>輸入紙匣中發生夾紙。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Paper Misfeed: Internal Path</p></td>
+<td align="left" valign="top" width="50%"><p>機器內發生夾紙。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Prepaid Card not inserted</p></td>
+<td align="left" valign="top" width="50%"><p>預付卡未插入，或額度不足。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Print Complete</p></td>
+<td align="left" valign="top" width="50%"><p>列印已完成。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Printing...</p></td>
+<td align="left" valign="top" width="50%"><p>正在列印。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Processing</p></td>
+<td align="left" valign="top" width="50%"><p>正在處理資料。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Proxy User/Password Incorrect</p></td>
+<td align="left" valign="top" width="50%"><p>代理伺服器使用者和密碼設定不正確。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>RC Gate Connection Error</p></td>
+<td align="left" valign="top" width="50%"><p>與RC Gate（Basil）連線失敗。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Readjusting...</p></td>
+<td align="left" valign="top" width="50%"><p>機器內部正在重新調整。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Ready</p></td>
+<td align="left" valign="top" width="50%"><p>機器準備就緒，可以列印。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Renewing Remote Certificate</p></td>
+<td align="left" valign="top" width="50%"><p>正在更新遠端憑證。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Replace Fusing Roller</p></td>
+<td align="left" valign="top" width="50%"><p>應該更換定著滾輪。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Reset IPDS fonts</p></td>
+<td align="left" valign="top" width="50%"><p>IPDS字型發生錯誤。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>SD Card Authentication failed</p></td>
+<td align="left" valign="top" width="50%"><p>SD卡驗證失敗。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Setting Remotely</p></td>
+<td align="left" valign="top" width="50%"><p>正在處理RDS設定。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Skipped due to Error</p></td>
+<td align="left" valign="top" width="50%"><p>跳過錯誤。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Storage Complete</p></td>
+<td align="left" valign="top" width="50%"><p>儲存已完成。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Storage Failed</p></td>
+<td align="left" valign="top" width="50%"><p>儲存失敗。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Supplies Order Call failed</p></td>
+<td align="left" valign="top" width="50%"><p>耗材訂購失敗。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Transmission Aborted</p></td>
+<td align="left" valign="top" width="50%"><p>傳送已中斷。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Transmission Complete</p></td>
+<td align="left" valign="top" width="50%"><p>傳送已完成。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Transmission Failed</p></td>
+<td align="left" valign="top" width="50%"><p>傳送已失敗。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Tray Error: Chaptering</p></td>
+<td align="left" valign="top" width="50%"><p>發生送紙匣規格錯誤，因為分隔章節與普通紙張使用同一個列印紙匣。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Tray Error: Duplex Printing</p></td>
+<td align="left" valign="top" width="50%"><p>選取的紙匣無法用於雙面影印。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Unit Left Open: ADF</p></td>
+<td align="left" valign="top" width="50%"><p>送稿機開啟。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Waiting for Job Suspension</p></td>
+<td align="left" valign="top" width="50%"><p>機器正在等待工作暫停。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Warming Up...</p></td>
+<td align="left" valign="top" width="50%"><p>機器正在暖機。</p></td>
+</tr>
+</table><div class="note">
+<p><img src="../../web/gen/zh-tw-i_not.gif" alt="註" width="73" height="16"></p><ul>
+<li><p>關於UNIX命令的詳細資訊，請參閱UNIX Supplement。</p></li>
+<li><p>查看錯誤內容，這些內容可能列印在配置頁。</p></li>
+</ul>
+</div>
+</div>
+<div id="footertable">
+<div class="footer" id="move"><a href="#headertable" title="頁首"><img src="../../web/gen/i_top.gif" alt="" width="21" height="15"><span class="footertext">返回頁首</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0134.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="footertext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0136.htm" title="下一個主題"><span class="footertext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="footer" id="line"><img src="../../web/gen/bg_f.gif" alt="" width="760" height="1"></div>
+<div class="footer" id="copy"><address>Copyright &copy; 2011 Ricoh Company, Ltd. All rights reserved.</address></div>
+</div>
+</div></body>
+</html>

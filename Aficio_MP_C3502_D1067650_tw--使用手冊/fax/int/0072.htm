@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-TW">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>繞過SMTP伺服器</title>
+<link rel="stylesheet" title="標準" href="../../web/css/def_exp_body_i.css" type="text/css">
+<link rel="alternate stylesheet" title="簡易" href="../../web/css/sim_exp_body_i.css" type="text/css">
+<!--[if IE 6]>
+<style>
+body.bodypage {
+   font-size : 80%;
+}
+div.bodypage {
+   font-size : 125%;
+}
+</style>
+<![endif]-->
+<link rel="contents" href="index.htm">
+<link rel="prev" href="0071.htm"><link rel="next" href="0073.htm">
+<script type="text/javascript" language="JavaScript1.2" src="../../booklist/js/split.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/cookie.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/honbun-i.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/summary.js"></script>
+<script type="text/javascript" language="JavaScript1.2">
+<!--
+read_css();
+// -->
+</script>
+</head>
+<body class="bodypage" onLoad="initialize();">
+<div class="bodypage">
+<div id="headertable">
+<div class="header" id="jump"><a href="#headerend"><img src="../../web/gen/jump_space.gif" alt="略過標頭" width="1" height="52"></a></div>
+<div class="header" id="logo"><a href="http://www.ricoh.com/"><img src="../../manual_common_image/lnricoh.gif" title="回到RICOH首頁" alt="RICOH" width="130" height="54"></a><img src="../../common/image/logo-p.gif" alt="Aficio MP C2051/C2551" width="380" height="54"></div>
+
+<div class="header" id="navi"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊"><img src="../../web/gen/i_index.gif" alt="" width="22" height="15"><span class="headernavitext">參考手冊</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="javascript:back_to_index()" title="內容"><img src="../../web/gen/i_book.gif" alt="" width="22" height="15"><span class="headernavitext">內容</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0071.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="headernavitext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0073.htm" title="下一個主題"><span class="headernavitext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="header" id="search"><form name="search" onSubmit="SearchWord(); return false;"><label class="headersearchtext" for="seek" accesskey="0"><input class="headersearchtext" type="text" id="seek" name="seek" value="" size="16" maxlength="128" tabindex="0"></label><a class="linkimage" onmouseover="Mover('btn','sea','1')" onmouseout="Mout('btn','sea','1')" href="javascript:SearchWord();"><img src="../../web/gen/zh-tw-search.gif" title="開始搜尋" alt="搜尋" name="btnsea1" width="50" height="20"></a></form></div>
+<div class="header" id="pref"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="#" onclick="goto_preference('int', 'preferences.htm')" title="變更參考手冊設定"><img src="../../web/gen/i_pref.gif" alt="" width="21" height="15"><span class="headernavitext">設定</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="help.htm" title="說明"><img src="../../web/gen/i_help.gif" alt="說明" width="15" height="15"></a></div>
+<div class="header" id="headerend">&nbsp;</div>
+</div>
+<p class="breadcrumbs"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊">首頁</a>&nbsp;&gt;&nbsp;<a href="javascript:back_to_index()" title="內容">傳真機參考手冊</a>&nbsp;&gt;&nbsp;<a href="index_chap_01.htm">傳送</a>&nbsp;&gt;&nbsp;<a href="0064.htm">指定目的地</a>&nbsp;&gt;&nbsp;<a href="0071.htm">以網路傳真傳送（網路傳真目的地）</a>&nbsp;&gt;&nbsp;繞過SMTP伺服器</p>
+<div class="moduleh1" id="replace">
+<h1>繞過SMTP伺服器</h1><div class="summary"><p>您可以不透過SMTP伺服器，直接將網路傳真文件傳送至目的地。</p></div><p>網路傳真通常是透過SMTP伺服器傳送。但使用這項功能時，目的地電子郵件地址的網域部份會被讀取為SMTP伺服器的位址，而且傳送會繞過SMTP伺服器。由於這會減少伺服器上的負載，傳送網路傳真時，無須考量從伺服器到目的地的傳送時間長短。</p><div class="important">
+<p><img src="../../web/gen/zh-tw-i_imp.gif" alt="重要訊息" width="73" height="16"></p><ul>
+<li><p>如果要使用這個功能，必須指定下列設定：</p><ul>
+<li><p>在「系統設定」的「SMTP伺服器」下的「檔案傳送」，將連接埠號設為「25」。</p></li>
+<li><p>如果要將另一方的主機名稱指定為電子郵件地址的網域，請在DNS伺服器中登記另一方的主機名稱。</p></li>
+<li><p>關於這些設定的詳細資訊，請參閱網路及系統設定參考手冊的「檔案傳送」。</p></li>
+</ul>
+</li>
+<li><p>如果另一方的IP位址未登記於DNS伺服器，請在電子郵件地址的網域指定IP位址。</p></li>
+<li><p>如果要由IPv6網路傳送文件，您必須指定另一方的主機名稱（而非IP位址）作為網域。</p></li>
+<li><p>如果要使用這個功能，對方的傳真機必須符合下列條件：</p><ul>
+<li><p>與網路傳真相容</p></li>
+<li><p>連接至與本機相同的區域網路</p></li>
+<li><p>支援SMTP接收，並將接收協定設為SMTP</p></li>
+</ul>
+</li>
+<li><p>如果使用本功能傳送網路傳真，對方傳真機的SMTP驗證設定會停用。</p></li>
+<li><p>如果對方使用這個功能傳送網路傳真，即使接收失敗，也不會傳送錯誤郵件通知給傳送者。</p></li>
+<li><p>如果使用這個功能傳送網路傳真，即使傳送失敗，伺服器也不會傳送錯誤通知電子郵件。</p></li>
+<li><p>使用這個功能時，您無法傳送網路傳真到登記於本機的管理員電子郵件地址。</p></li>
+</ul>
+</div>
+<p>指定目的地有兩種方法，如下所述：</p><div class="listterm">
+<p class="term">指定另一方的主機名稱</p><div class="listitem"><p>將另一方的主機名稱新增至電子郵件地址的網域，即可指定目的地電子郵件地址。如下指定@之後的位址：「主機名稱」、「.（英文句點）」與「網域名稱」。</p><p>xxxx@另一方的主機名稱.網域名稱</p><p>例如，如果另一方的電子郵件地址為「abc@defcompany.com」，主機名稱為「HOST」：</p><p>abc@HOST.defcompany.com</p></div><p class="term">指定另一方的IP位址</p><div class="listitem"><p>將電子郵件的網域部份變更為另一方的IP位址，即可指定目的地電子郵件地址。</p><p>xxxx@[另一方的IP位址]</p><p>例如：如果另一方的電子郵件地址為「abc@defcompany.com」，而IP位址為「192.168.1.10」：</p><p>abc@[192.168.1.10]</p></div></div>
+<p>使用下列程序即可繞過SMTP伺服器。</p><div class="procedure">
+<div>
+<p class="operation"><img src="../../web/int/numb01.gif" alt="1" class="opnumber" width="25" height="16">按下<span class="softkeyma">[網路傳真]</span>，將傳送類型切換為網路傳真。</p><p id="delete062"><img src="../image/fax_051.gif" alt="操作面板畫面圖示說明" width="231" height="164"></p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb02.gif" alt="2" class="opnumber" width="25" height="16">按下<span class="softkeyma">[SMTP]</span>。</p><p id="delete063"><img src="../image/fax_056.gif" alt="操作面板畫面圖示說明" width="231" height="164"></p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb03.gif" alt="3" class="opnumber" width="25" height="16">按下<span class="softkeyma">[否]</span>。</p><p id="delete064"><img src="../image/fax_057.gif" alt="操作面板畫面圖示說明" width="231" height="164"></p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb04.gif" alt="4" class="opnumber" width="25" height="16">按下<span class="softkeyma">[確定]</span>鍵。</p><p id="delete065"><img src="../image/fax_058.gif" alt="操作面板畫面圖示說明" width="231" height="164"></p></div>
+</div>
+<div class="note">
+<p><img src="../../web/gen/zh-tw-i_not.gif" alt="註" width="73" height="16"></p><ul>
+<li><p>如果使用<span class="softkeyma">[手動輸入]</span>直接指定目的地，也可以指定每個目的地是否使用SMTP伺服器。</p></li>
+<li><p>如果您使用目的地清單來選擇目的地，會啟用通訊錄中指定的SMTP伺服器設定。關於在通訊錄中進行SMTP伺服器設定的詳細資訊，請參閱網路及系統設定參考手冊的「登記傳真機／掃描器功能的位址和使用者」。</p></li>
+<li><p>如果要從電腦傳送網路傳真文件，請使用LAN－Fax驅動程式指定是否繞過SMTP伺服器。傳送時，若勾選了<span class="softkeypc">[使用裝置位址]</span>核取方塊，會啟用本機器上指定的SMTP伺服器設定。</p></li>
+</ul>
+</div>
+</div>
+<div id="footertable">
+<div class="footer" id="move"><a href="#headertable" title="頁首"><img src="../../web/gen/i_top.gif" alt="" width="21" height="15"><span class="footertext">返回頁首</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0071.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="footertext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0073.htm" title="下一個主題"><span class="footertext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="footer" id="line"><img src="../../web/gen/bg_f.gif" alt="" width="760" height="1"></div>
+<div class="footer" id="copy"><address>Copyright &copy; 2011 Ricoh Company, Ltd. All rights reserved.</address></div>
+</div>
+</div></body>
+</html>

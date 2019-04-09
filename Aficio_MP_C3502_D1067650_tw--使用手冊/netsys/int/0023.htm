@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-TW">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>檔案傳送</title>
+<link rel="stylesheet" title="標準" href="../../web/css/def_exp_body_i.css" type="text/css">
+<link rel="alternate stylesheet" title="簡易" href="../../web/css/sim_exp_body_i.css" type="text/css">
+<!--[if IE 6]>
+<style>
+body.bodypage {
+   font-size : 80%;
+}
+div.bodypage {
+   font-size : 125%;
+}
+</style>
+<![endif]-->
+<link rel="contents" href="index.htm">
+<link rel="prev" href="0022.htm"><link rel="next" href="0024.htm">
+<script type="text/javascript" language="JavaScript1.2" src="../../booklist/js/split.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/cookie.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/honbun-i.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/summary.js"></script>
+<script type="text/javascript" language="JavaScript1.2">
+<!--
+read_css();
+// -->
+</script>
+</head>
+<body class="bodypage" onLoad="initialize();">
+<div class="bodypage">
+<div id="headertable">
+<div class="header" id="jump"><a href="#headerend"><img src="../../web/gen/jump_space.gif" alt="略過標頭" width="1" height="52"></a></div>
+<div class="header" id="logo"><a href="http://www.ricoh.com/"><img src="../../manual_common_image/lnricoh.gif" title="回到RICOH首頁" alt="RICOH" width="130" height="54"></a><img src="../../common/image/logo-p.gif" alt="Aficio MP C2051/C2551" width="380" height="54"></div>
+
+<div class="header" id="navi"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊"><img src="../../web/gen/i_index.gif" alt="" width="22" height="15"><span class="headernavitext">參考手冊</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="javascript:back_to_index()" title="內容"><img src="../../web/gen/i_book.gif" alt="" width="22" height="15"><span class="headernavitext">內容</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0022.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="headernavitext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0024.htm" title="下一個主題"><span class="headernavitext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="header" id="search"><form name="search" onSubmit="SearchWord(); return false;"><label class="headersearchtext" for="seek" accesskey="0"><input class="headersearchtext" type="text" id="seek" name="seek" value="" size="16" maxlength="128" tabindex="0"></label><a class="linkimage" onmouseover="Mover('btn','sea','1')" onmouseout="Mout('btn','sea','1')" href="javascript:SearchWord();"><img src="../../web/gen/zh-tw-search.gif" title="開始搜尋" alt="搜尋" name="btnsea1" width="50" height="20"></a></form></div>
+<div class="header" id="pref"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="#" onclick="goto_preference('int', 'preferences.htm')" title="變更參考手冊設定"><img src="../../web/gen/i_pref.gif" alt="" width="21" height="15"><span class="headernavitext">設定</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="help.htm" title="說明"><img src="../../web/gen/i_help.gif" alt="說明" width="15" height="15"></a></div>
+<div class="header" id="headerend">&nbsp;</div>
+</div>
+<p class="breadcrumbs"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊">首頁</a>&nbsp;&gt;&nbsp;<a href="javascript:back_to_index()" title="內容">網路及系統設定參考手冊</a>&nbsp;&gt;&nbsp;<a href="index_chap_01.htm">系統設定</a>&nbsp;&gt;&nbsp;檔案傳送</p>
+<div class="moduleh1" id="replace">
+<h1>檔案傳送</h1><div class="summary"><p>本節說明系統設定下檔案傳送選單中的使用者工具。</p></div><div class="listterm">
+<p class="term">傳送選項</p><div class="listitem"><p>啟用或停用發送已儲存或掃描的文件至ScanRouter傳送伺服器。</p><p>預設值：<span class="softkeyma">[<em>關閉</em>]</span></p><p>當選擇是否使用ScanRouter傳送軟體時，請指定此選項。如果您選擇使用，則必須在ScanRouter傳送軟體中重新登記I／O裝置。</p></div><p class="term">獲取伺服器IPv4位址</p><div class="listitem"><p>指定獲取伺服器IPv4位址。</p><p>當安裝檔案格式轉換器，且ScanRouter傳送軟體使用獲取功能時，會顯示此設定。</p></div><p class="term">傳真接收檔案傳送</p><div class="listitem"><p>指定如何經由不同的線路來傳送接收到的傳真檔案。</p><ul>
+<li><p>設定各線路</p><p>指定接收到的傳真文件是否傳送到每個傳真線路的ScanRouter傳送軟體。</p><ul>
+<li><p>G3 埠 1</p></li>
+<li><p>電子郵件</p></li>
+<li><p>IP－Fax</p></li>
+</ul>
+<p>預設值：<span class="softkeyma">[<em>不要</em><em>傳送</em>]</span></p><p>這些線路會根據操作環境而顯示。</p></li>
+<li><p>接收檔案傳送</p><p>指定接收到的傳真文件是否傳送到每個傳真線路的ScanRouter傳送軟體。</p><p>預設值：<span class="softkeyma">[<em>不要</em><em>傳送</em>]</span></p></li>
+<li><p>於傳送時列印</p><p>指定當接收的傳真文件傳送到ScanRouter傳送軟體時是否也應同時列印。</p><p>預設值：<span class="softkeyma">[<em>不要</em><em>列印</em>]</span></p></li>
+<li><p>要傳送的檔案</p><p>指定要將所有接收到的傳真文件，或只將接收到有傳送代碼（含ID或SUB／SEP代碼的文件）的傳真文件，傳送到ScanRouter傳送軟體。</p><p>預設值：<span class="softkeyma">[<em>全部的檔案</em>]</span></p></li>
+<li><p>傳送失敗的檔案</p><p>若能接收傳真，但無法透過ScanRouter傳送軟體發送傳真，傳真將儲存在本機的記憶體中。若將接收文件刪除設定為「1（開啟）」，由於記憶體不足或內部硬碟錯誤而無法儲存的文件將自動被刪除，並列印接收檔案消除報告。</p><p>關於接收檔案消除報告的詳細資訊，請參閱傳真機參考手冊中的「接收檔案設定」。若要列印儲存的檔案，請選取<span class="softkeyma">[列印檔案]</span>，若要刪除儲存的檔案，請選取<span class="softkeyma">[刪除檔案]</span>。</p><ul>
+<li><p>列印檔案</p></li>
+<li><p>刪除檔案</p></li>
+</ul>
+</li>
+</ul>
+<p>當ScanRouter傳送軟體使用傳送功能時，會顯示此設定。</p></div><p class="term">SMTP伺服器名稱</p><div class="listitem"><p>指定SMTP伺服器名稱。</p><p>如果使用DNS，則輸入主機名稱。</p><p>如果不是使用DNS，則輸入SMTP伺服器IPv4位址。</p><p>「埠編號」預設值：[<em>25</em>]</p><p>「SSL」：<span class="softkeyma">[<em>關閉</em>]</span>的預設值</p><p>輸入伺服器名稱時，請使用最多127個字元。不能輸入空格。</p><p>用數字鍵輸入連接埠編號，範圍為1到 65535，然後按下<span class="hardkeyma">[<img src="../../manual_common_image/char_ric89.gif" alt="井字號" width="11" height="16">]</span>鍵。</p><p>SMTP伺服器會與直接SMTP伺服器共用同一個連接埠編號。</p><p>如果SSL設為<span class="softkeyma">[開啟]</span>時，連接埠編號會自動變更為「465」。</p></div><p class="term">SMTP驗證</p><div class="listitem"><p>指定SMTP驗證（PLAIN、LOGIN、CRAMMD5、DIGEST-MD5）。傳送電子郵件至SMTP伺服器時，您可以使用需要輸入使用者名稱和密碼的驗證方式，來增強SMTP伺服器的安全等級。</p><p>如果SMTP伺服器需要驗證，請將<span class="softkeyma">[SMTP驗證]</span>設為<span class="softkeyma">[開啟]</span>，再指定使用者名稱、密碼和加密。</p><p>使用網路傳真時，請輸入為管理員電子郵件地址設定的使用者名稱和密碼。</p><p>預設值：<span class="softkeyma">[<em>關閉</em>]</span></p><ul>
+<li><p>使用者名稱</p><p>輸入使用者名稱時，最多可使用191個字元。</p><p>不能輸入空格。視SMTP伺服器種類而定，必須指定「realm」。請將「@」加到使用者名稱之後，例如，「使用者名稱@realm」。</p></li>
+<li><p>電子郵件地址</p><p>輸入電子郵件地址時，最多可使用128個字元。</p></li>
+<li><p>密碼</p><p>輸入密碼時，最多可使用128個字元。</p><p>不能輸入空格。</p></li>
+<li><p>加密</p><p>選擇加密方式，如下所示：</p><p><span class="softkeyma">[自動]</span></p><p>如果驗證方法為PLAIN、LOGIN、CRAM-MD5或DIGEST-MD5，則使用此方式。</p><p><span class="softkeyma">[開啟]</span></p><p>如果驗證方法為CRAMMD5或DIGEST-MD5，則使用此方式。</p><p><span class="softkeyma">[關閉]</span></p><p>如果驗證方法為PLAIN或LOGIN，則使用此方式。</p></li>
+</ul>
+</div><p class="term">SMTP之前的POP</p><div class="listitem"><p>指定POP驗證（SMTP之前的POP）。</p><p>將電子郵件傳送到SMTP伺服器時，您可以透過連接到POP伺服器進行驗證，來增加SMTP伺服器的安全等級。</p><p>預設值：<span class="softkeyma">[<em>關閉</em>]</span></p><p>如果將SMTP之前的POP設為<span class="softkeyma">[開啟]</span>，請指定驗證後的等待時間、使用者名稱、電子郵件地址和密碼。</p><ul>
+<li><p>驗證後的等待時間</p><p>預設值：<span class="softkeyma">[<em>300毫秒</em>]</span></p><p>指定<span class="softkeyma">[驗證後的等待時間]</span>，範圍從0到10,000毫秒，每次增加1毫秒。</p></li>
+<li><p>使用者名稱</p><p>輸入使用者名稱時，最多可使用191個字元。不能輸入空格。</p></li>
+<li><p>電子郵件地址</p><p>輸入電子郵件地址時，最多可使用128個字元。不能輸入空格。</p></li>
+<li><p>密碼</p><p>輸入密碼時，最多可使用128個字元。不能輸入空格。</p></li>
+</ul>
+<p>若要透過SMTP伺服器傳送電子郵件前，啟用POP伺服器驗證，請將<span class="softkeyma">[SMTP之前的POP]</span>設為<span class="softkeyma">[開啟]</span>。在<span class="softkeyma">[驗證後的等待時間]</span>中指定的時間過後，會將電子郵件傳送到SMTP伺服器。</p><p>如果您選擇<span class="softkeyma">[開啟]</span>，請在POP3/IMAP4設定中輸入伺服器名稱。此外，也請確認電子郵件通訊埠中的POP3連接埠編號。</p></div><p class="term">接收協定</p><div class="listitem"><p>指定接收網路傳真的接收協定。</p><p>預設值：<span class="softkeyma">[<em>POP3</em>]</span></p></div><p class="term">POP3/IMAP4設定</p><div class="listitem"><p>指定接收網路傳真的POP3/IMAP4伺服器名稱。</p><p>指定用於<span class="softkeyma">[SMTP之前的POP]</span>的POP3/IMAP4伺服器名稱。</p><p>預設值：<span class="softkeyma">[<em>自動</em>]</span></p><ul>
+<li><p>伺服器名稱</p><p>如果使用DNS，則輸入主機名稱。</p><p>如果未使用DNS，則輸入POP3/IMAP4或伺服器的IPv4位址。</p><p>輸入POP3/IMAP4伺服器名稱時，最多使用127個字元。不能輸入空格。</p></li>
+<li><p>加密</p><p>選擇加密方式，如下所示：</p><p><span class="softkeyma">[自動]</span></p><p>根據POP/IMAP伺服器設定，自動設定密碼加密。</p><p><span class="softkeyma">[開啟]</span></p><p>加密密碼。</p><p><span class="softkeyma">[關閉]</span></p><p>不加密密碼。</p></li>
+</ul>
+</div><p class="term">管理員的電子郵件地址</p><div class="listitem"><p>指定管理員的電子郵件地址。</p><p>在電子郵件寄出的掃描文件中，如果未指定傳送者，則會顯示此地址作為傳送者的地址。</p><p>當在網路傳真功能下傳送電子郵件時，在下列狀況下，管理員的電子郵件地址會顯示為傳送者的地址：</p><ul>
+<li><p>尚未指定傳送者，且未登記機器的電子郵件地址。</p></li>
+<li><p>指定的傳送者未登記在機器的通訊錄中，且機器的電子郵件地址尚未登記。</p></li>
+</ul>
+<p>在網路傳真功能下為傳送的檔案執行SMTP驗證時，會在「傳送者：」方塊中出現管理員的電子郵件地址。如果您已在<span class="softkeyma">[SMTP驗證]</span>中指定使用者名稱和電子郵件地址，請確定指定此設定。</p><p>最多輸入128個字元。</p><p>在電子郵件傳送的掃描文件中，如果<span class="softkeyma">[自動指定傳送者名稱]</span>為<span class="softkeyma">[關閉]</span>，請指定傳送者。</p></div><p class="term">電子郵件通訊埠</p><div class="listitem"><p>指定接收網路傳真的連接埠編號。指定用於<span class="softkeyma">[SMTP之前的POP]</span>的POP3連接埠編號。</p><p>「POP3」預設值：[<em>110</em>]</p><p>「IMAP4」預設值：[<em>143</em>]</p><p>用數字鍵輸入連接埠編號，範圍為1到65535，然後按下 <span class="hardkeyma">[<img src="../../manual_common_image/char_ric89.gif" alt="井字號" width="11" height="16">]</span>鍵。</p></div><p class="term">電子郵件接收間隔</p><div class="listitem"><p>以分鐘指定經由POP3或IMAP4伺服器接收網路傳真的時間間隔。</p><p>預設值：<span class="softkeyma">[<em>開啟</em>]</span>、<em> </em><span class="softkeyma">[<em>15分鐘</em>]</span></p><p>如果選擇<span class="softkeyma">[開啟]</span>，則可設定時間，範圍為2到1440分鐘，增幅單位為1分鐘。</p></div><p class="term">接收電子郵件大小上限</p><div class="listitem"><p>指定接收網路傳真的接收電子郵件大小上限。</p><p>預設值：<span class="softkeyma">[<em>2 MB</em>]</span></p><p>輸入大小，範圍從 1到 50 MB，增幅單位為 1MB。</p></div><p class="term">儲存在伺服器中的電子郵件</p><div class="listitem"><p>指定是否將接收到的網路傳真電子郵件儲存到POP3或IMAP4伺服器上。</p><p>預設值：<span class="softkeyma">[<em>關閉</em>]</span></p></div><p class="term">預設的使用者名稱／密碼（傳送）</p><div class="listitem"><p>將掃描檔案直接傳送到執行Windows的電腦上的共用資料夾、FTP伺服器或NetWare伺服器時，指定所要求的使用者名稱和密碼。</p><p>最多輸入64個字元。</p></div><p class="term">登錄／變更／刪除電子郵件訊息</p><div class="listitem"><p>將網路傳真或掃描檔案作為附件傳送時，可以登錄、變更或刪除所使用的電子郵件訊息。</p><ul>
+<li><p>登錄／變更：</p><ol>
+<li><p>按下<span class="hardkeyma">[使用者工具／計數器]</span>鍵。</p></li>
+<li><p>按下<span class="softkeyma">[系統設定]</span>。</p></li>
+<li><p>按下<span class="softkeyma">[檔案傳送]</span>。</p></li>
+<li><p>按下[<img src="../../manual_common_image/iconst1.084.gif" alt="向下鍵" width="10" height="16">次頁]。</p></li>
+<li><p>按下<span class="softkeyma">[登錄／變更／刪除電子郵件訊息]</span>。</p></li>
+<li><p>請確定已選擇<span class="softkeyma">[登錄／變更]</span>。</p></li>
+<li><p>按下<span class="softkeyma">[*未登錄]</span>。</p><p>若要變更已登記的電子郵件訊息，請選擇要變更的電子郵件訊息。</p></li>
+<li><p>按下「名稱」下的<span class="softkeyma">[變更]</span>。</p></li>
+<li><p>輸入名稱，然後按下<span class="softkeyma">[確定]</span>。</p><p>輸入名稱時，最多可使用20個字元。</p></li>
+<li><p>按下<span class="softkeyma">[編輯]</span>。</p><p>若要開始新的一行，請按下<span class="softkeyma">[確定]</span>，回到電子郵件訊息畫面，然後按下「選擇要編輯的行：」中的[<img src="../../manual_common_image/iconst1.084.gif" alt="向下鍵" width="10" height="16">]。</p></li>
+<li><p>輸入文字，然後按下<span class="softkeyma">[確定]</span>。</p><p>最多可輸入五行的文字。每行最多可以有80個字元。</p></li>
+<li><p>按下<span class="softkeyma">[確定]</span>鍵。</p></li>
+<li><p>按下<span class="softkeyma">[結束]</span>鍵。</p></li>
+<li><p>按下<span class="hardkeyma">[使用者工具／計數器]</span>鍵。</p></li>
+</ol>
+</li>
+<li><p>刪除：</p><ol>
+<li><p>按下<span class="hardkeyma">[使用者工具／計數器]</span>鍵。</p></li>
+<li><p>按下<span class="softkeyma">[系統設定]</span>。</p></li>
+<li><p>按下<span class="softkeyma">[檔案傳送]</span>。</p></li>
+<li><p>按下[<img src="../../manual_common_image/iconst1.084.gif" alt="向下鍵" width="10" height="16">次頁]。</p></li>
+<li><p>按下<span class="softkeyma">[登錄／變更／刪除電子郵件訊息]</span>。</p></li>
+<li><p>按下<span class="softkeyma">[刪除]</span>。</p></li>
+<li><p>選擇要刪除的電子郵件訊息。</p><p>隨即出現與刪除相關的確認訊息。</p></li>
+<li><p>按下<span class="softkeyma">[是]</span>。</p></li>
+<li><p>按下<span class="softkeyma">[結束]</span>鍵。</p></li>
+<li><p>按下<span class="hardkeyma">[使用者工具／計數器]</span>鍵。</p></li>
+</ol>
+</li>
+</ul>
+</div><p class="term">自動指定傳送者名稱</p><div class="listitem"><p>設定在傳送電子郵件時是否指定傳送者名稱。</p><p>預設值：<span class="softkeyma">[<em>關</em><em>閉</em>]</span></p><ul>
+<li><p>開啟</p><p>如果您選擇<span class="softkeyma">[開啟]</span>，則會在「傳送者：」方塊中出現指定的電子郵件地址 。如果您未指定傳送者的地址，管理員的電子郵件地址會出現在「傳送者：」方塊中 。</p><p>如果在傳真功能下使用電子郵件傳送檔案時，未指定傳送者，或如果指定的電子郵件地址未登記在機器的通訊錄中，機器的電子郵件地址將出現在「傳送者：」方塊中 。如果機器沒有電子郵件地址，管理員的電子郵件地址將出現在「傳送者：」方塊中 。</p></li>
+<li><p>關閉</p><p>如果您選擇<span class="softkeyma">[關閉]</span>，則會在「傳送者：」方塊中出現指定的電子郵件地址， 但您無法在未指定傳送者電子郵件地址的狀況下傳送電子郵件。在傳真功能下，如果指定的傳送者電子郵件地址未登記在機器的通訊錄中，則您無法傳送電子郵件。</p></li>
+</ul>
+</div><p class="term">傳真電子郵件帳號</p><div class="listitem"><p>指定接收網路傳真的電子郵件地址、使用者名稱和密碼。</p><p>預設值：<span class="softkeyma">[<em>不</em><em>接收</em>]</span></p><ul>
+<li><p>電子郵件地址</p><p>輸入電子郵件地址時，最多可使用128個字元。</p></li>
+<li><p>使用者名稱</p><p>輸入使用者名稱時，最多可使用191個字元。</p></li>
+<li><p>密碼</p><p>輸入密碼時，最多可使用128個字元。</p></li>
+</ul>
+</div><p class="term">掃描器重送時間間隔</p><div class="listitem"><p>如果掃描檔案無法被傳送到傳送伺服器或郵件伺服器，指定機器重發掃描檔案之前等待的間隔。</p><p>預設值：<span class="softkeyma">[<em>300秒</em>]</span></p><p>可使用數字鍵設定時間，範圍從60到900秒，增減幅度為1秒。</p><p>此設定適用於掃描器功能。</p><p>此設定對於WSD掃描器功能無效。</p></div><p class="term">掃描器重送次數</p><div class="listitem"><p>設定掃描檔案被重發至傳送伺服器或郵件伺服器的最大次數。</p><p>預設值：<span class="softkeyma">[<em>開啟</em>]</span>、<span class="softkeyma">[<em>3次</em>]</span></p><p>如果選擇<span class="softkeyma">[開啟]</span>，則可設定次數，範圍從 1到 99。</p><p>此設定適用於掃描器功能。</p><p>此設定對於WSD掃描器功能無效。</p></div></div>
+<div class="note">
+<p><img src="../../web/gen/zh-tw-i_not.gif" alt="註" width="73" height="16"></p><ul>
+<li><p>關於如何存取系統設定的詳細資訊，請參閱「存取使用者工具」。</p></li>
+</ul>
+</div>
+<div class="reference">
+<p><img src="../../web/gen/zh-tw-i_ref.gif" alt="參考" width="73" height="16"></p><ul>
+<li><p><a href="./0012.htm">存取使用者工具</a><a href="./0012.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a></p></li>
+</ul>
+</div>
+</div>
+<div id="footertable">
+<div class="footer" id="move"><a href="#headertable" title="頁首"><img src="../../web/gen/i_top.gif" alt="" width="21" height="15"><span class="footertext">返回頁首</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0022.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="footertext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0024.htm" title="下一個主題"><span class="footertext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="footer" id="line"><img src="../../web/gen/bg_f.gif" alt="" width="760" height="1"></div>
+<div class="footer" id="copy"><address>Copyright &copy; 2011 Ricoh Company, Ltd. All rights reserved.</address></div>
+</div>
+</div></body>
+</html>

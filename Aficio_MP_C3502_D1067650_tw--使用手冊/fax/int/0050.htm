@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-TW">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>檢查已掃描原稿的內容（傳送前預覽）</title>
+<link rel="stylesheet" title="標準" href="../../web/css/def_exp_body_i.css" type="text/css">
+<link rel="alternate stylesheet" title="簡易" href="../../web/css/sim_exp_body_i.css" type="text/css">
+<!--[if IE 6]>
+<style>
+body.bodypage {
+   font-size : 80%;
+}
+div.bodypage {
+   font-size : 125%;
+}
+</style>
+<![endif]-->
+<link rel="contents" href="index.htm">
+<link rel="prev" href="0049.htm"><link rel="next" href="0051.htm">
+<script type="text/javascript" language="JavaScript1.2" src="../../booklist/js/split.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/cookie.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/honbun-i.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/summary.js"></script>
+<script type="text/javascript" language="JavaScript1.2">
+<!--
+read_css();
+// -->
+</script>
+</head>
+<body class="bodypage" onLoad="initialize();">
+<div class="bodypage">
+<div id="headertable">
+<div class="header" id="jump"><a href="#headerend"><img src="../../web/gen/jump_space.gif" alt="略過標頭" width="1" height="52"></a></div>
+<div class="header" id="logo"><a href="http://www.ricoh.com/"><img src="../../manual_common_image/lnricoh.gif" title="回到RICOH首頁" alt="RICOH" width="130" height="54"></a><img src="../../common/image/logo-p.gif" alt="Aficio MP C2051/C2551" width="380" height="54"></div>
+
+<div class="header" id="navi"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊"><img src="../../web/gen/i_index.gif" alt="" width="22" height="15"><span class="headernavitext">參考手冊</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="javascript:back_to_index()" title="內容"><img src="../../web/gen/i_book.gif" alt="" width="22" height="15"><span class="headernavitext">內容</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0049.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="headernavitext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0051.htm" title="下一個主題"><span class="headernavitext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="header" id="search"><form name="search" onSubmit="SearchWord(); return false;"><label class="headersearchtext" for="seek" accesskey="0"><input class="headersearchtext" type="text" id="seek" name="seek" value="" size="16" maxlength="128" tabindex="0"></label><a class="linkimage" onmouseover="Mover('btn','sea','1')" onmouseout="Mout('btn','sea','1')" href="javascript:SearchWord();"><img src="../../web/gen/zh-tw-search.gif" title="開始搜尋" alt="搜尋" name="btnsea1" width="50" height="20"></a></form></div>
+<div class="header" id="pref"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="#" onclick="goto_preference('int', 'preferences.htm')" title="變更參考手冊設定"><img src="../../web/gen/i_pref.gif" alt="" width="21" height="15"><span class="headernavitext">設定</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="help.htm" title="說明"><img src="../../web/gen/i_help.gif" alt="說明" width="15" height="15"></a></div>
+<div class="header" id="headerend">&nbsp;</div>
+</div>
+<p class="breadcrumbs"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊">首頁</a>&nbsp;&gt;&nbsp;<a href="javascript:back_to_index()" title="內容">傳真機參考手冊</a>&nbsp;&gt;&nbsp;<a href="index_chap_01.htm">傳送</a>&nbsp;&gt;&nbsp;<a href="0040.htm">放置原稿</a>&nbsp;&gt;&nbsp;檢查已掃描原稿的內容（傳送前預覽）</p>
+<div class="moduleh1" id="replace">
+<h1>檢查已掃描原稿的內容（傳送前預覽）</h1><div class="summary"><p>傳送前預覽功能可讓您在傳送前，檢查已掃描原稿的內容。</p></div><div class="important">
+<p><img src="../../web/gen/zh-tw-i_imp.gif" alt="重要訊息" width="73" height="16"></p><ul>
+<li><p>這個功能無法與下列功能搭配使用：</p><ul>
+<li><p>立即傳送</p></li>
+<li><p>平行記憶傳送</p></li>
+<li><p>免聽筒撥號</p></li>
+<li><p>手動撥號</p></li>
+<li><p>SEP碼接收</p></li>
+<li><p>當「<span class="softkeyma">[儲存檔案]</span>」已設定為「<span class="softkeyma">[僅儲存]</span>」</p></li>
+<li><p>僅傳送已儲存的檔案</p></li>
+<li><p>記憶檔案傳送</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="procedure">
+<div>
+<p class="operation"><img src="../../web/int/numb01.gif" alt="1" class="opnumber" width="25" height="16">放置原稿後，指定所需的掃描設定。</p><p class="supplement">正確指定「原稿方向」設定。否則，預覽時，無法正確顯示原稿的上／下方向。</p><p class="supplement">關於設定的詳細資訊，請參閱「設定原稿方向」。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb02.gif" alt="2" class="opnumber" width="25" height="16">按下<span class="softkeyma">[預覽]</span>。</p><p id="delete021"><img src="../image/fax_023.gif" alt="操作面板畫面圖示說明" width="231" height="164"></p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb03.gif" alt="3" class="opnumber" width="25" height="16">指定目的地，然後按下<span class="hardkeyma">[開始]</span>鍵。</p><p id="delete022"><img src="../image/bzr027.gif" alt="開始鍵圖示說明" width="230" height="173"></p><p class="supplement">機器開始掃描原稿。掃描完成時，會顯示預覽。</p><p class="supplement">如果要取消預覽，請按下<span class="softkeyma">[取消]</span>。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb04.gif" alt="4" class="opnumber" width="25" height="16">檢查預覽。</p><p id="delete023"><img src="../image/fax_024.gif" alt="操作面板畫面圖示說明" width="231" height="139"></p><ul>
+<li><p>按下<span class="softkeyma">[縮小]</span>或<span class="softkeyma">[放大]</span>，即可縮小或放大預覽影像。</p></li>
+<li><p>按下[<img src="../../manual_common_image/char_ric93.gif" alt="" width="14" height="16">] [<img src="../../manual_common_image/char_ric91.gif" alt="" width="14" height="16">] [<img src="../../manual_common_image/char_ric90.gif" alt="" width="12" height="16">] [<img src="../../manual_common_image/char_ric92.gif" alt="" width="12" height="16">]捲動預覽影像。</p></li>
+<li><p>按下「顯示檔案」的<span class="softkeyma">[切換]</span>，即可顯示所選的檔案。</p></li>
+<li><p>按下「顯示頁面」的<span class="softkeyma">[切換]</span>，即可變更顯示的頁面。</p></li>
+</ul>
+</div>
+<div>
+<p class="operation"><img src="../../web/int/numb05.gif" alt="5" class="opnumber" width="25" height="16">按下<span class="softkeyma">[傳送]</span>。</p><p class="supplement">傳送開始。</p><p class="supplement">若要取消傳送，請按下<span class="softkeyma">[取消傳送]</span>。</p><p class="supplement">傳送後，會出現待機顯示。</p></div>
+</div>
+<div class="note">
+<p><img src="../../web/gen/zh-tw-i_not.gif" alt="註" width="73" height="16"></p><ul>
+<li><p>您可以選擇機器電源一開啟或在每次按下<span class="hardkeyma">[總清除]</span>鍵後立即選擇傳送前預覽。關於詳細資訊，請參閱「變更傳真初始顯示的預設功能」。</p></li>
+</ul>
+</div>
+<div class="reference">
+<p><img src="../../web/gen/zh-tw-i_ref.gif" alt="參考" width="73" height="16"></p><ul>
+<li><p><a href="./0041.htm">設定原稿方向</a><a href="./0041.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a></p></li>
+<li><p><a href="./default.htm">變更傳真機初始顯示的預設功能</a><a href="./default.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a></p></li>
+</ul>
+</div>
+</div>
+<div id="footertable">
+<div class="footer" id="move"><a href="#headertable" title="頁首"><img src="../../web/gen/i_top.gif" alt="" width="21" height="15"><span class="footertext">返回頁首</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0049.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="footertext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0051.htm" title="下一個主題"><span class="footertext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="footer" id="line"><img src="../../web/gen/bg_f.gif" alt="" width="760" height="1"></div>
+<div class="footer" id="copy"><address>Copyright &copy; 2011 Ricoh Company, Ltd. All rights reserved.</address></div>
+</div>
+</div></body>
+</html>

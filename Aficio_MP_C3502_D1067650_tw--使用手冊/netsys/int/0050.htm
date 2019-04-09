@@ -1,0 +1,171 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-TW">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>乙太網路</title>
+<link rel="stylesheet" title="標準" href="../../web/css/def_exp_body_i.css" type="text/css">
+<link rel="alternate stylesheet" title="簡易" href="../../web/css/sim_exp_body_i.css" type="text/css">
+<!--[if IE 6]>
+<style>
+body.bodypage {
+   font-size : 80%;
+}
+div.bodypage {
+   font-size : 125%;
+}
+</style>
+<![endif]-->
+<link rel="contents" href="index.htm">
+<link rel="prev" href="0049.htm"><link rel="next" href="0051.htm">
+<script type="text/javascript" language="JavaScript1.2" src="../../booklist/js/split.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/cookie.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/honbun-i.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/summary.js"></script>
+<script type="text/javascript" language="JavaScript1.2">
+<!--
+read_css();
+// -->
+</script>
+</head>
+<body class="bodypage" onLoad="initialize();">
+<div class="bodypage">
+<div id="headertable">
+<div class="header" id="jump"><a href="#headerend"><img src="../../web/gen/jump_space.gif" alt="略過標頭" width="1" height="52"></a></div>
+<div class="header" id="logo"><a href="http://www.ricoh.com/"><img src="../../manual_common_image/lnricoh.gif" title="回到RICOH首頁" alt="RICOH" width="130" height="54"></a><img src="../../common/image/logo-p.gif" alt="Aficio MP C2051/C2551" width="380" height="54"></div>
+
+<div class="header" id="navi"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊"><img src="../../web/gen/i_index.gif" alt="" width="22" height="15"><span class="headernavitext">參考手冊</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="javascript:back_to_index()" title="內容"><img src="../../web/gen/i_book.gif" alt="" width="22" height="15"><span class="headernavitext">內容</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0049.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="headernavitext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0051.htm" title="下一個主題"><span class="headernavitext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="header" id="search"><form name="search" onSubmit="SearchWord(); return false;"><label class="headersearchtext" for="seek" accesskey="0"><input class="headersearchtext" type="text" id="seek" name="seek" value="" size="16" maxlength="128" tabindex="0"></label><a class="linkimage" onmouseover="Mover('btn','sea','1')" onmouseout="Mout('btn','sea','1')" href="javascript:SearchWord();"><img src="../../web/gen/zh-tw-search.gif" title="開始搜尋" alt="搜尋" name="btnsea1" width="50" height="20"></a></form></div>
+<div class="header" id="pref"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="#" onclick="goto_preference('int', 'preferences.htm')" title="變更參考手冊設定"><img src="../../web/gen/i_pref.gif" alt="" width="21" height="15"><span class="headernavitext">設定</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="help.htm" title="說明"><img src="../../web/gen/i_help.gif" alt="說明" width="15" height="15"></a></div>
+<div class="header" id="headerend">&nbsp;</div>
+</div>
+<p class="breadcrumbs"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊">首頁</a>&nbsp;&gt;&nbsp;<a href="javascript:back_to_index()" title="內容">網路及系統設定參考手冊</a>&nbsp;&gt;&nbsp;<a href="index_chap_02.htm">連接機器</a>&nbsp;&gt;&nbsp;<a href="0049.htm">使用網路傳送掃描器所需的網路設定</a>&nbsp;&gt;&nbsp;乙太網路</p>
+<div class="moduleh1" id="replace">
+<h1>乙太網路</h1><div class="summary"><p>此節列出使用乙太網路將資料傳送到網路所需的設定。</p></div><p>關於如何指定設定的詳細資訊，請參閱「介面設定」和「檔案傳送」。</p><table border="1" frame="box" rules="all" cellpadding="5">
+<tr>
+<th align="center" valign="middle" width="33%"><p>選單</p></th>
+<th align="center" valign="middle" width="33%"><p>使用者工具</p></th>
+<th align="center" valign="middle" width="33%"><p>設定需求</p></th>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>介面設定／網路</p></td>
+<td align="left" valign="middle" width="33%"><p>機器IPv4位址</p></td>
+<td align="center" valign="middle" width="33%"><p>必要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>介面設定／網路</p></td>
+<td align="left" valign="middle" width="33%"><p>IPv4閘道位址</p></td>
+<td align="center" valign="middle" width="33%"><p>視需要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>介面設定／網路</p></td>
+<td align="left" valign="middle" width="33%"><p>機器IPv6位址</p></td>
+<td align="center" valign="middle" width="33%"><p>視需要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>介面設定／網路</p></td>
+<td align="left" valign="middle" width="33%"><p>IPv6閘道位址</p></td>
+<td align="center" valign="middle" width="33%"><p>視需要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>介面設定／網路</p></td>
+<td align="left" valign="middle" width="33%"><p>IPv6無狀態位址自動配置</p></td>
+<td align="center" valign="middle" width="33%"><p>視需要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>介面設定／網路</p></td>
+<td align="left" valign="middle" width="33%"><p>DNS組態設定</p></td>
+<td align="center" valign="middle" width="33%"><p>視需要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>介面設定／網路</p></td>
+<td align="left" valign="middle" width="33%"><p>DDNS組態設定</p></td>
+<td align="center" valign="middle" width="33%"><p>視需要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>介面設定／網路</p></td>
+<td align="left" valign="middle" width="33%"><p>IPsec</p></td>
+<td align="center" valign="middle" width="33%"><p>視需要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>介面設定／網路</p></td>
+<td align="left" valign="middle" width="33%"><p>網域名稱</p></td>
+<td align="center" valign="middle" width="33%"><p>視需要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>介面設定／網路</p></td>
+<td align="left" valign="middle" width="33%"><p>WINS組態設定</p></td>
+<td align="center" valign="middle" width="33%"><p>視需要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>介面設定／網路</p></td>
+<td align="left" valign="middle" width="33%"><p>有效協定</p></td>
+<td align="center" valign="middle" width="33%"><p>必要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>介面設定／網路</p></td>
+<td align="left" valign="middle" width="33%"><p>乙太網路速度</p></td>
+<td align="center" valign="middle" width="33%"><p>視需要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>介面設定／網路</p></td>
+<td align="left" valign="middle" width="33%"><p>乙太網路的IEEE 802.1X驗證</p></td>
+<td align="center" valign="middle" width="33%"><p>視需要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>介面設定／網路</p></td>
+<td align="left" valign="middle" width="33%"><p>允許SNMPv3通訊</p></td>
+<td align="center" valign="middle" width="33%"><p>視需要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>介面設定／網路</p></td>
+<td align="left" valign="middle" width="33%"><p>允許SSL／TLS通訊</p></td>
+<td align="center" valign="middle" width="33%"><p>視需要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>介面設定／網路</p></td>
+<td align="left" valign="middle" width="33%"><p>主機名稱</p></td>
+<td align="center" valign="middle" width="33%"><p>視需要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>檔案傳送</p></td>
+<td align="left" valign="middle" width="33%"><p>傳送選項</p></td>
+<td align="center" valign="middle" width="33%"><p>必要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>檔案傳送</p></td>
+<td align="left" valign="middle" width="33%"><p>傳真接收檔案傳送</p></td>
+<td align="center" valign="middle" width="33%"><p>視需要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>檔案傳送</p></td>
+<td align="left" valign="middle" width="33%"><p>掃描器重發時間間隔</p></td>
+<td align="center" valign="middle" width="33%"><p>視需要</p></td>
+</tr>
+<tr>
+<td align="left" valign="middle" width="33%"><p>檔案傳送</p></td>
+<td align="left" valign="middle" width="33%"><p>掃描器重發次數</p></td>
+<td align="center" valign="middle" width="33%"><p>視需要</p></td>
+</tr>
+</table><div class="note">
+<p><img src="../../web/gen/zh-tw-i_not.gif" alt="註" width="73" height="16"></p><ul>
+<li><p>關於有效協定的設定，請檢查您想要使用的協定是否已設定為<span class="softkeyma">[有效]</span>。</p></li>
+<li><p>如果傳送選項設定為<span class="softkeyma">[開啟]</span>，請檢查並確認已經指定了IPv4位址。</p></li>
+</ul>
+</div>
+<div class="reference">
+<p><img src="../../web/gen/zh-tw-i_ref.gif" alt="參考" width="73" height="16"></p><ul>
+<li><p><a href="./0019.htm">介面設定</a><a href="./0019.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a></p></li>
+<li><p><a href="./0023.htm">檔案傳送</a><a href="./0023.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a></p></li>
+</ul>
+</div>
+</div>
+<div id="footertable">
+<div class="footer" id="move"><a href="#headertable" title="頁首"><img src="../../web/gen/i_top.gif" alt="" width="21" height="15"><span class="footertext">返回頁首</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0049.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="footertext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0051.htm" title="下一個主題"><span class="footertext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="footer" id="line"><img src="../../web/gen/bg_f.gif" alt="" width="760" height="1"></div>
+<div class="footer" id="copy"><address>Copyright &copy; 2011 Ricoh Company, Ltd. All rights reserved.</address></div>
+</div>
+</div></body>
+</html>

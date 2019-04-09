@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-TW">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>設定網路介面板</title>
+<link rel="stylesheet" title="標準" href="../../web/css/def_exp_body_i.css" type="text/css">
+<link rel="alternate stylesheet" title="簡易" href="../../web/css/sim_exp_body_i.css" type="text/css">
+<!--[if IE 6]>
+<style>
+body.bodypage {
+   font-size : 80%;
+}
+div.bodypage {
+   font-size : 125%;
+}
+</style>
+<![endif]-->
+<link rel="contents" href="index.htm">
+<link rel="prev" href="0139.htm"><link rel="next" href="0141.htm">
+<script type="text/javascript" language="JavaScript1.2" src="../../booklist/js/split.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/cookie.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/honbun-i.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/summary.js"></script>
+<script type="text/javascript" language="JavaScript1.2">
+<!--
+read_css();
+// -->
+</script>
+</head>
+<body class="bodypage" onLoad="initialize();">
+<div class="bodypage">
+<div id="headertable">
+<div class="header" id="jump"><a href="#headerend"><img src="../../web/gen/jump_space.gif" alt="略過標頭" width="1" height="52"></a></div>
+<div class="header" id="logo"><a href="http://www.ricoh.com/"><img src="../../manual_common_image/lnricoh.gif" title="回到RICOH首頁" alt="RICOH" width="130" height="54"></a><img src="../../common/image/logo-p.gif" alt="Aficio MP C2051/C2551" width="380" height="54"></div>
+
+<div class="header" id="navi"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊"><img src="../../web/gen/i_index.gif" alt="" width="22" height="15"><span class="headernavitext">參考手冊</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="javascript:back_to_index()" title="內容"><img src="../../web/gen/i_book.gif" alt="" width="22" height="15"><span class="headernavitext">內容</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0139.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="headernavitext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0141.htm" title="下一個主題"><span class="headernavitext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="header" id="search"><form name="search" onSubmit="SearchWord(); return false;"><label class="headersearchtext" for="seek" accesskey="0"><input class="headersearchtext" type="text" id="seek" name="seek" value="" size="16" maxlength="128" tabindex="0"></label><a class="linkimage" onmouseover="Mover('btn','sea','1')" onmouseout="Mout('btn','sea','1')" href="javascript:SearchWord();"><img src="../../web/gen/zh-tw-search.gif" title="開始搜尋" alt="搜尋" name="btnsea1" width="50" height="20"></a></form></div>
+<div class="header" id="pref"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="#" onclick="goto_preference('int', 'preferences.htm')" title="變更參考手冊設定"><img src="../../web/gen/i_pref.gif" alt="" width="21" height="15"><span class="headernavitext">設定</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="help.htm" title="說明"><img src="../../web/gen/i_help.gif" alt="說明" width="15" height="15"></a></div>
+<div class="header" id="headerend">&nbsp;</div>
+</div>
+<p class="breadcrumbs"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊">首頁</a>&nbsp;&gt;&nbsp;<a href="javascript:back_to_index()" title="內容">網路及系統設定參考手冊</a>&nbsp;&gt;&nbsp;<a href="index_chap_04.htm">監視與設定本機</a>&nbsp;&gt;&nbsp;<a href="0137.htm">瞭解顯示的資訊</a>&nbsp;&gt;&nbsp;設定網路介面板</p>
+<div class="moduleh1" id="replace">
+<h1>設定網路介面板</h1><div class="summary"><p>使用下列指令顯示網路介面板設定：</p></div><ul>
+<li><p>telnet：使用「show」指令。</p></li>
+</ul>
+<div class="listterm">
+<p class="term">Protocol Up／Down</p><div class="listitem"><p>即顯示下列協定（「Up」代表啟用；「Down」代表停用）：。</p><p>IPv4、IPv6、IPsec、NetWare、SMB</p></div><p class="term">Device Up／Down</p><div class="listitem"><p>即顯示下列裝置（「Up」代表啟用；「Down」代表停用）：。</p><p>Parallel、USB</p></div><p class="term">Ethernet interface</p><div class="listitem"><p>顯示乙太網路的速度。</p></div><p class="term">Syslog priority</p><div class="listitem"><p>即顯示「LOG_INFO」。</p></div><p class="term">NVRAM version</p><div class="listitem"><p>顯示NVRAM版本。</p></div><p class="term">Device name</p><div class="listitem"><p>顯示裝置名稱。</p></div><p class="term">Comment</p><div class="listitem"><p>顯示備註。</p></div><p class="term">Location</p><div class="listitem"><p>顯示裝置位置。</p></div><p class="term">Contact</p><div class="listitem"><p>顯示聯絡人詳細資訊。</p></div><p class="term">Soft switch</p><div class="listitem"><p>顯示觸控開關。</p></div><p class="term">TCP／IP</p><div class="listitem"><p>即顯示下列項目：（「Up」代表啟用；「Down」代表停用）：。</p><ul>
+<li><p>Mode (IPv4)</p></li>
+<li><p>Mode (IPv6)</p><p>ftp、lpr、rsh、diprint、web、http、ftpc、snmp、ipp、autonet、Bonjour、ssl、nrs、rfu、nbt、ssdp、ssh、sftp、WSD (Device)、WSD (Printer)、WSD (Scanner)、rhpp</p></li>
+<li><p>IPv4</p><p>DHCP、Address、Netmask、Broadcast、Gateway</p></li>
+<li><p>IPv6</p><p>Stateless、Manual、Gateway、DHCPv6-lite、DUID、DHCPv6 option lifetime</p></li>
+<li><p>IPsec</p><p>Manual Mode、Excluded Protocol （https、dns、dhcp、wins）</p></li>
+<li><p>EncapType</p></li>
+<li><p>Host name</p></li>
+<li><p>DNS Domain</p></li>
+<li><p>Access Control</p><p>IPv4：Access Entry [1]－[5]</p><p>IPv6：Access Entry [1]－[5]</p></li>
+<li><p>SNTP Server</p></li>
+<li><p>Time Zone</p></li>
+<li><p>SNTP Server polling time</p></li>
+<li><p>SYSLOG server</p></li>
+<li><p>Home page URL1</p></li>
+<li><p>Home page link name1</p></li>
+<li><p>Home page URL2</p></li>
+<li><p>Home page link name2</p></li>
+<li><p>Help page URL</p></li>
+<li><p>RHPP Port</p></li>
+<li><p>RHPP timeout</p></li>
+</ul>
+</div><p class="term">NetWare</p><div class="listitem"><p>即顯示下列項目：</p><ul>
+<li><p>EncapType</p></li>
+<li><p>RPRINTER number</p></li>
+<li><p>Print server name</p></li>
+<li><p>File server name</p></li>
+<li><p>Context name</p></li>
+<li><p>Switch</p><p>Mode、NDS/Bindery、Packet negotiation、Login Mode</p></li>
+<li><p>Print job timeout</p></li>
+<li><p>Protocol</p></li>
+<li><p>SAP interval time</p></li>
+<li><p>NDS Tree Name</p></li>
+<li><p>Transfer Protocol</p></li>
+</ul>
+</div><p class="term">SMB</p><div class="listitem"><p>即顯示下列項目：</p><ul>
+<li><p>Switch</p><p>Mode、Direct print、Notification</p></li>
+<li><p>Workgroup name</p></li>
+<li><p>Computer name</p></li>
+<li><p>Comment</p></li>
+<li><p>Share name [1]</p></li>
+<li><p>Protocol</p></li>
+</ul>
+</div><p class="term">Ethernet</p><div class="listitem"><p>即顯示下列項目：</p><p>802.1X Authentication</p></div><p class="term">DNS</p><div class="listitem"><p>即顯示下列項目：</p><ul>
+<li><p>IPv4</p><p>Server [1]-[3], Selected IPv4 DNS Server</p></li>
+<li><p>IPv6</p><p>Server [1]-[3]、Selected IPv6 DNS Server、Resolver Protocol</p></li>
+</ul>
+</div><p class="term">Domain name</p><div class="listitem"><p>即顯示下列項目：</p><p>ether</p></div><p class="term">DDNS</p><div class="listitem"><p>即顯示下列項目：</p><p>ether</p></div><p class="term">WINS</p><div class="listitem"><p>即顯示下列項目：</p><ul>
+<li><p>ether</p><p>Primary WINS、Secondary WINS</p></li>
+</ul>
+</div><p class="term">SSDP</p><div class="listitem"><p>即顯示下列項目：</p><p>UUID、Profile、TTL</p></div><p class="term">UPnP</p><div class="listitem"><p>即顯示下列項目：</p><p>URL</p></div><p class="term">Bonjour</p><div class="listitem"><p>即顯示下列項目：</p><p>Computer Name (cname)、Local Hostname (ether)、Location、Priority (diprint)、Priority (lpr)、Priority (ipp)、IP TTL、LinkLocal Route for Multi I/F、IPP Port</p></div><p class="term">SNMP</p><div class="listitem"><p>即顯示下列項目：</p><p>SNMPv1v2、SNMPv3、protocol、v1Trap、v2Trap、v3Trap、SNMPv1v2 Remote Setting、SNMPv3 Privacy</p></div><p class="term">ssh</p><div class="listitem"><p>即顯示下列項目：</p><p>Compression、Port、TimeOut、LoginTimeOut</p></div><p class="term">AuthFree</p><div class="listitem"><p>即顯示下列項目：</p><ul>
+<li><p>IPv4</p><p>AuthFree Entry [1]－[5]</p></li>
+<li><p>IPv6</p><p>AuthFree Entry [1]－[5]</p></li>
+<li><p>Parallel</p></li>
+<li><p>USB</p></li>
+</ul>
+</div><p class="term">LPR</p><div class="listitem"><p>即顯示下列項目：</p><p>lprm check host、lpr prnerrchk</p></div><p class="term">Certificate</p><div class="listitem"><p>即顯示下列項目：</p><p>Verification</p></div><p class="term">WS-MFP</p><div class="listitem"><p>即顯示下列項目：</p><p>Network Device Name、Comments、Location、Presentation URL、WSD (Device) TCP Port、WSD (Printer) TCP Port、WSD (Printer) Job Timeout、WSD (Scanner) TCP Port、MetadataVersion、UUID</p></div><p class="term">IEEE 802.1X</p><div class="listitem"><p>即顯示下列項目：</p><p>User name、Domain name、EAP Type、Password、Phase 2 user name、Phase 2 Method TTLS、Phase 2 Method PEAP、Server cert、Intermediate CA、Server ID、Sub domain</p></div><p class="term">Shell mode</p><div class="listitem"><p>即顯示「使用者模式」。</p></div></div>
+</div>
+<div id="footertable">
+<div class="footer" id="move"><a href="#headertable" title="頁首"><img src="../../web/gen/i_top.gif" alt="" width="21" height="15"><span class="footertext">返回頁首</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0139.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="footertext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0141.htm" title="下一個主題"><span class="footertext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="footer" id="line"><img src="../../web/gen/bg_f.gif" alt="" width="760" height="1"></div>
+<div class="footer" id="copy"><address>Copyright &copy; 2011 Ricoh Company, Ltd. All rights reserved.</address></div>
+</div>
+</div></body>
+</html>

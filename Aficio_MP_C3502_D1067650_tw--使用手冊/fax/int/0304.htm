@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-TW">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>SMTP接收檔傳送設定</title>
+<link rel="stylesheet" title="標準" href="../../web/css/def_exp_body_i.css" type="text/css">
+<link rel="alternate stylesheet" title="簡易" href="../../web/css/sim_exp_body_i.css" type="text/css">
+<!--[if IE 6]>
+<style>
+body.bodypage {
+   font-size : 80%;
+}
+div.bodypage {
+   font-size : 125%;
+}
+</style>
+<![endif]-->
+<link rel="contents" href="index.htm">
+<link rel="prev" href="0303.htm"><link rel="next" href="0305.htm">
+<script type="text/javascript" language="JavaScript1.2" src="../../booklist/js/split.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/cookie.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/honbun-i.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/summary.js"></script>
+<script type="text/javascript" language="JavaScript1.2">
+<!--
+read_css();
+// -->
+</script>
+</head>
+<body class="bodypage" onLoad="initialize();">
+<div class="bodypage">
+<div id="headertable">
+<div class="header" id="jump"><a href="#headerend"><img src="../../web/gen/jump_space.gif" alt="略過標頭" width="1" height="52"></a></div>
+<div class="header" id="logo"><a href="http://www.ricoh.com/"><img src="../../manual_common_image/lnricoh.gif" title="回到RICOH首頁" alt="RICOH" width="130" height="54"></a><img src="../../common/image/logo-p.gif" alt="Aficio MP C2051/C2551" width="380" height="54"></div>
+
+<div class="header" id="navi"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊"><img src="../../web/gen/i_index.gif" alt="" width="22" height="15"><span class="headernavitext">參考手冊</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="javascript:back_to_index()" title="內容"><img src="../../web/gen/i_book.gif" alt="" width="22" height="15"><span class="headernavitext">內容</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0303.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="headernavitext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0305.htm" title="下一個主題"><span class="headernavitext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="header" id="search"><form name="search" onSubmit="SearchWord(); return false;"><label class="headersearchtext" for="seek" accesskey="0"><input class="headersearchtext" type="text" id="seek" name="seek" value="" size="16" maxlength="128" tabindex="0"></label><a class="linkimage" onmouseover="Mover('btn','sea','1')" onmouseout="Mout('btn','sea','1')" href="javascript:SearchWord();"><img src="../../web/gen/zh-tw-search.gif" title="開始搜尋" alt="搜尋" name="btnsea1" width="50" height="20"></a></form></div>
+<div class="header" id="pref"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="#" onclick="goto_preference('int', 'preferences.htm')" title="變更參考手冊設定"><img src="../../web/gen/i_pref.gif" alt="" width="21" height="15"><span class="headernavitext">設定</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="help.htm" title="說明"><img src="../../web/gen/i_help.gif" alt="說明" width="15" height="15"></a></div>
+<div class="header" id="headerend">&nbsp;</div>
+</div>
+<p class="breadcrumbs"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊">首頁</a>&nbsp;&gt;&nbsp;<a href="javascript:back_to_index()" title="內容">傳真機參考手冊</a>&nbsp;&gt;&nbsp;<a href="index_chap_07.htm">傳真功能</a>&nbsp;&gt;&nbsp;SMTP接收檔傳送設定</p>
+<div class="moduleh1" id="replace">
+<h1>SMTP接收檔傳送設定</h1><div class="summary"><p>本節說明傳真功能中的SMTP接收檔傳送設定選單。</p></div><p>當設定已授權的電子郵件地址時，如果接收的電子郵件是來自於與已授權位址不符的位址，電子郵件則會被捨棄，錯誤訊息會被傳回SMTP伺服器。</p><p>已授權的電子郵件地址會與電子郵件建立者的位址進行比較，如下所述。</p><ul>
+<li><p>當已授權的電子郵件地址設為「@aaa.abcd.com」時：</p><p>abc@aaa.abcd.com － 接受</p><p>def@aaa.xyz.com － 不接受</p><p>abc@abcd.com － 不接受</p></li>
+</ul>
+<p>即使捨棄電子郵件，也不會輸出錯誤報告。</p><p>在允許傳閱由SMTP所接收電子郵件的系統上可以使用這項功能。</p><div class="procedure">
+<div>
+<p class="operation"><img src="../../web/int/numb01.gif" alt="1" class="opnumber" width="25" height="16">按下<span class="softkeyma">[傳真功能]</span>。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb02.gif" alt="2" class="opnumber" width="25" height="16">按下<span class="softkeyma">[接收設定]</span>。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb03.gif" alt="3" class="opnumber" width="25" height="16">按下<span class="softkeyma">[SMTP接收檔傳送設定]</span>。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb04.gif" alt="4" class="opnumber" width="25" height="16">按下<span class="softkeyma">[開啟]</span>。</p><p id="delete353"><img src="../image/faxu012.gif" alt="操作面板畫面圖示說明" width="231" height="164"></p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb05.gif" alt="5" class="opnumber" width="25" height="16">按下<span class="softkeyma">[變更]</span>。</p><p id="delete354"><img src="../image/faxu013.gif" alt="操作面板畫面圖示說明" width="231" height="164"></p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb06.gif" alt="6" class="opnumber" width="25" height="16">輸入要授權的傳送電子郵件地址。</p><p class="supplement">如果操作錯誤，請按下[<img src="../../manual_common_image/char_ric93.gif" alt="" width="14" height="16">]、[<img src="../../manual_common_image/char_ric91.gif" alt="" width="14" height="16">]、<span class="softkeyma">[倒退鍵]</span>或<span class="softkeyma">[全部刪除]</span>，然後重新輸入。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb07.gif" alt="7" class="opnumber" width="25" height="16">按下<span class="softkeyma">[確定]</span>鍵。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb08.gif" alt="8" class="opnumber" width="25" height="16">按下<span class="softkeyma">[安全]</span>。</p><p class="supplement">如果未指定安全功能，請繼續步驟十一。</p><p class="supplement">安全設定使用S／MIME驗證。關於安全設定的詳細資訊，請諮詢您的管理員。</p><p id="delete355"><img src="../image/faxu014.gif" alt="操作面板畫面圖示說明" width="231" height="164"></p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb09.gif" alt="9" class="opnumber" width="25" height="16">選擇安全功能。</p><p class="supplement">若要指定傳送文件加密，請按下<span class="softkeyma">[加密]</span>。若要使用加密功能，必須將位址儲存於通訊錄中，並啟用加密選項。關於加密的詳細資訊，請諮詢您的管理員。</p><p class="supplement">若要在傳送文件時附加簽名，請按下<span class="softkeyma">[簽名]</span>。關於簽名的詳細資訊，請諮詢您的管理員。</p><p id="delete356"><img src="../image/faxu015.gif" alt="操作面板畫面圖示說明" width="231" height="164"></p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb10.gif" alt="10" class="opnumber" width="25" height="16">按下<span class="softkeyma">[確定]</span>鍵。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb11.gif" alt="11" class="opnumber" width="25" height="16">按下<span class="softkeyma">[確定]</span>鍵。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb12.gif" alt="12" class="opnumber" width="25" height="16">按下<span class="hardkeyma">[使用者工具／計數器]</span>鍵。</p></div>
+</div>
+<div class="note">
+<p><img src="../../web/gen/zh-tw-i_not.gif" alt="註" width="73" height="16"></p><ul>
+<li><p>如果您已指定轉傳的電子郵件目的地，您可以指定用來轉傳的檔案格式。請參閱「參數設定」（參數21，位元3）。</p></li>
+<li><p>在加密設定中，選擇<span class="softkeypc">[全部加密]</span>，即會傳送加密的電子郵件，不受<span class="softkeyma">[安全]</span>中加密設定的影響。關於加密的詳細資訊，請諮詢您的管理員。</p></li>
+<li><p>視Web Image Monitor上的S／MINE設定而定，電子簽章受限於下列方式。關於電子簽章的詳細資訊，請諮詢您的管理員。</p><ul>
+<li><p>如果設定<span class="softkeypc">[個別設定]</span>：</p><p>您可以在<span class="softkeyma">[安全]</span>中設定<span class="softkeyma">[簽名]</span>，並在每次傳送時，將電子簽章附加到電子郵件。</p></li>
+<li><p>如果設定<span class="softkeypc">[不要用簽名]</span>：</p><p>即使按下<span class="softkeyma">[安全]</span>，<span class="softkeyma">[簽名]</span>也不會出現。</p></li>
+<li><p>如果設定<span class="softkeypc">[使用簽名]</span>：</p><p>傳送電子郵件時，會附加電子簽章。<span class="softkeyma">[安全]</span>中的<span class="softkeyma">[簽名]</span>設定無法被取消。</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="footertable">
+<div class="footer" id="move"><a href="#headertable" title="頁首"><img src="../../web/gen/i_top.gif" alt="" width="21" height="15"><span class="footertext">返回頁首</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0303.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="footertext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0305.htm" title="下一個主題"><span class="footertext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="footer" id="line"><img src="../../web/gen/bg_f.gif" alt="" width="760" height="1"></div>
+<div class="footer" id="copy"><address>Copyright &copy; 2011 Ricoh Company, Ltd. All rights reserved.</address></div>
+</div>
+</div></body>
+</html>

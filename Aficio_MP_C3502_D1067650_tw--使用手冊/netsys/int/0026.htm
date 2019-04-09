@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-TW">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>設定LDAP伺服器</title>
+<link rel="stylesheet" title="標準" href="../../web/css/def_exp_body_i.css" type="text/css">
+<link rel="alternate stylesheet" title="簡易" href="../../web/css/sim_exp_body_i.css" type="text/css">
+<!--[if IE 6]>
+<style>
+body.bodypage {
+   font-size : 80%;
+}
+div.bodypage {
+   font-size : 125%;
+}
+</style>
+<![endif]-->
+<link rel="contents" href="index.htm">
+<link rel="prev" href="0025.htm"><link rel="next" href="0027.htm">
+<script type="text/javascript" language="JavaScript1.2" src="../../booklist/js/split.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/cookie.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/honbun-i.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/summary.js"></script>
+<script type="text/javascript" language="JavaScript1.2">
+<!--
+read_css();
+// -->
+</script>
+</head>
+<body class="bodypage" onLoad="initialize();">
+<div class="bodypage">
+<div id="headertable">
+<div class="header" id="jump"><a href="#headerend"><img src="../../web/gen/jump_space.gif" alt="略過標頭" width="1" height="52"></a></div>
+<div class="header" id="logo"><a href="http://www.ricoh.com/"><img src="../../manual_common_image/lnricoh.gif" title="回到RICOH首頁" alt="RICOH" width="130" height="54"></a><img src="../../common/image/logo-p.gif" alt="Aficio MP C2051/C2551" width="380" height="54"></div>
+
+<div class="header" id="navi"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊"><img src="../../web/gen/i_index.gif" alt="" width="22" height="15"><span class="headernavitext">參考手冊</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="javascript:back_to_index()" title="內容"><img src="../../web/gen/i_book.gif" alt="" width="22" height="15"><span class="headernavitext">內容</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0025.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="headernavitext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0027.htm" title="下一個主題"><span class="headernavitext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="header" id="search"><form name="search" onSubmit="SearchWord(); return false;"><label class="headersearchtext" for="seek" accesskey="0"><input class="headersearchtext" type="text" id="seek" name="seek" value="" size="16" maxlength="128" tabindex="0"></label><a class="linkimage" onmouseover="Mover('btn','sea','1')" onmouseout="Mout('btn','sea','1')" href="javascript:SearchWord();"><img src="../../web/gen/zh-tw-search.gif" title="開始搜尋" alt="搜尋" name="btnsea1" width="50" height="20"></a></form></div>
+<div class="header" id="pref"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="#" onclick="goto_preference('int', 'preferences.htm')" title="變更參考手冊設定"><img src="../../web/gen/i_pref.gif" alt="" width="21" height="15"><span class="headernavitext">設定</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="help.htm" title="說明"><img src="../../web/gen/i_help.gif" alt="說明" width="15" height="15"></a></div>
+<div class="header" id="headerend">&nbsp;</div>
+</div>
+<p class="breadcrumbs"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊">首頁</a>&nbsp;&gt;&nbsp;<a href="javascript:back_to_index()" title="內容">網路及系統設定參考手冊</a>&nbsp;&gt;&nbsp;<a href="index_chap_01.htm">系統設定</a>&nbsp;&gt;&nbsp;<a href="0025.htm">設定LDAP伺服器</a>&nbsp;&gt;&nbsp;設定LDAP伺服器</p>
+<div class="moduleh1" id="replace">
+<h1>設定LDAP伺服器</h1><div class="summary"><p>本節說明如何登錄LDAP伺服器。</p></div><div class="procedure">
+<div>
+<p class="operation"><img src="../../web/int/numb01.gif" alt="1" class="opnumber" width="25" height="16">按下<span class="hardkeyma">[使用者工具／計數器]</span>鍵。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb02.gif" alt="2" class="opnumber" width="25" height="16">按下<span class="softkeyma">[系統設定]</span>。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb03.gif" alt="3" class="opnumber" width="25" height="16">按下<span class="softkeyma">[管理員工具]</span>。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb04.gif" alt="4" class="opnumber" width="25" height="16">按[<img src="../../manual_common_image/iconst1.084.gif" alt="向下鍵" width="10" height="16">次頁]兩下。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb05.gif" alt="5" class="opnumber" width="25" height="16">按下<span class="softkeyma">[登錄／變更／刪除LDAP伺服器]</span>。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb06.gif" alt="6" class="opnumber" width="25" height="16">請確定已選擇<span class="softkeyma">[登錄／變更]</span>。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb07.gif" alt="7" class="opnumber" width="25" height="16">選擇您要登錄或變更的LDAP伺服器。</p><p class="supplement">設定伺服器時，請選擇<span class="softkeyma">[*未登錄]</span>。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb08.gif" alt="8" class="opnumber" width="25" height="16">按下「名稱」下的<span class="softkeyma">[變更]</span>。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb09.gif" alt="9" class="opnumber" width="25" height="16">輸入名稱，然後按<span class="softkeyma">[確定]</span>。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb10.gif" alt="10" class="opnumber" width="25" height="16">按下「伺服器名稱」下的<span class="softkeyma">[變更]</span>。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb11.gif" alt="11" class="opnumber" width="25" height="16">輸入伺服器名稱，然後按<span class="softkeyma">[確定]</span>。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb12.gif" alt="12" class="opnumber" width="25" height="16">按下「搜尋基礎」下的<span class="softkeyma">[變更]</span>。</p><p class="supplement">選擇根資料夾，從所選資料夾中登記為搜尋目標的電子郵件地址開始搜尋。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb13.gif" alt="13" class="opnumber" width="25" height="16">輸入搜尋基礎，然後按<span class="softkeyma">[確定]</span>。</p><p class="supplement">例如，如果搜尋目標為ABC公司的業務部門，則輸入「dc=業務部門, o=ABC」。（此範例針對有效目錄進行說明，「dc」為組織單位，「o」為公司。）</p><p class="supplement">視伺服器環境而定，可能需要登記搜尋基礎。若需要登記，未指定的搜尋會呈現錯誤。 </p><p class="supplement">請檢查伺服器環境，再輸入必要的規格。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb14.gif" alt="14" class="opnumber" width="25" height="16">按下「埠編號」下的<span class="softkeyma">[變更]</span>。</p><p class="supplement">指定要用來與LDAP伺服器通訊的埠編號。指定與環境相容的連接埠。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb15.gif" alt="15" class="opnumber" width="25" height="16">使用數字鍵輸入埠編號，然後按下[<img src="../../manual_common_image/char_ric89.gif" alt="井字號" width="11" height="16">]鍵。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb16.gif" alt="16" class="opnumber" width="25" height="16">在「使用安全連接（SSL）」下，按下<span class="softkeyma">[開啟]</span>。</p><p class="supplement">使用SSL與LDAP伺服器通訊。</p><p class="supplement">若要讓SSL能作用，LDAP伺服器必須支援SSL。</p><p class="supplement">如果SSL設為<span class="softkeyma">[開啟]</span>時，埠編號會自動變更為「636」。</p><p class="supplement">如果未啟用SSL，可能會發生安全問題。若要啟用SSL，您必須使用機器的設定。關於詳細資訊，請諮詢您的網路管理員。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb17.gif" alt="17" class="opnumber" width="25" height="16">按下[<img src="../../manual_common_image/iconst1.084.gif" alt="向下鍵" width="10" height="16">次頁]。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb18.gif" alt="18" class="opnumber" width="25" height="16">選擇驗證方法。</p><p class="supplement">若要對LDAP伺服器提出搜尋申請，請使用管理員帳號進行驗證。</p><p class="supplement">驗證設定必須與您伺服器的驗證設定相符。設定本機前，請先檢查您的伺服器設定。</p><p class="supplement"><span class="softkeyma">[摘要驗證]</span>僅能在LDAP 3.0版使用。</p><p class="supplement">如果選擇<span class="softkeyma">[明文驗證]</span>，則密碼會以原狀傳送給LDAP伺服器，不做加密處理。</p><p class="supplement">如果選擇<span class="softkeyma">[摘要驗證]</span>，則會使用加密程序傳送密碼，加密程序能防止傳送到LDAP伺服器期間的密碼外洩。</p><p class="supplement">如果選擇<span class="softkeyma">[Kerberos驗證]</span>，則會使用加密程序傳送密碼，加密程序能防止傳送到進行驗證的KDC伺服器期間的密碼外洩。</p><p class="supplement">如果您選擇<span class="softkeyma">[關閉]</span>，請繼續步驟24。</p><p class="supplement">如果您選擇<span class="softkeyma">[摘要驗證]</span>或<span class="softkeyma">[明文驗證]</span>，請繼續步驟19到22，再繼續步驟24。</p><p class="supplement">如果您選擇<span class="softkeyma">[Kerberos驗證]</span>，請繼續步驟19到23，再繼續步驟24。</p><p id="delete005"><img src="../image/ss003.gif" alt="操作面板畫面圖示說明" width="231" height="139"></p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb19.gif" alt="19" class="opnumber" width="25" height="16">按下「使用者名稱」下的<span class="softkeyma">[變更]</span>。</p><p class="supplement">選擇<span class="softkeyma">[Kerberos驗證]</span>、<span class="softkeyma">[摘要驗證]</span>或<span class="softkeyma">[明文驗證]</span>進行驗證設定時，請使用管理員帳號名稱和密碼。為每個人或每次搜尋使用驗證時，請勿輸入管理員帳號名稱和密碼。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb20.gif" alt="20" class="opnumber" width="25" height="16">輸入使用者名稱，然後按下<span class="softkeyma">[確定]</span>。</p><p class="supplement">使用者名稱設定的程序會視伺服器環境而有不同。進行設定前，請先檢查您的伺服器環境。</p><p class="supplement">範例：網域名稱＼使用者名稱、使用者名稱@網域名稱、CN=名稱、OU=部門名稱、DC=伺服器名稱</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb21.gif" alt="21" class="opnumber" width="25" height="16">按下「密碼」下的<span class="softkeyma">[變更]</span>。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb22.gif" alt="22" class="opnumber" width="25" height="16">輸入密碼，然後按下<span class="softkeyma">[確定]</span>。</p><p class="supplement">進行管理員驗證需要使用者名稱和密碼，以便存取LDAP伺服器。</p><p class="supplement">您可以使用通訊錄中儲存的使用者名稱和密碼連接到LDAP伺服器。關於詳細資訊，請參閱「登記SMTP和LDAP驗證」。</p><p class="supplement">如果您選擇<span class="softkeyma">[摘要驗證]</span>或<span class="softkeyma">[明文驗證]</span>，請繼續步驟24。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb23.gif" alt="23" class="opnumber" width="25" height="16">選擇Realm。</p><p id="delete006"><img src="../image/nvce018.gif" alt="操作面板畫面圖示說明" width="231" height="164"></p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb24.gif" alt="24" class="opnumber" width="25" height="16">按下<span class="softkeyma">[連接測試]</span>。</p><p class="supplement">存取LDAP伺服器，以檢查是否已建立適當連接。請檢查驗證是否按照驗證設定運作。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb25.gif" alt="25" class="opnumber" width="25" height="16">按下<span class="softkeyma">[結束]</span>鍵。</p><p class="supplement">如果連線測試失敗，請檢查您的設定並重試。</p><p class="supplement">此功能不會檢查搜尋情況或搜尋基礎。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb26.gif" alt="26" class="opnumber" width="25" height="16">按下[<img src="../../manual_common_image/iconst1.084.gif" alt="向下鍵" width="10" height="16">次頁]。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb27.gif" alt="27" class="opnumber" width="25" height="16">針對以下您要用作搜尋條件的項目按下<span class="softkeyma">[變更]</span>：「名稱」、「電子郵件地址」、「傳真號碼」、「公司名稱」和「部門名稱」。</p><p class="supplement">您可以輸入屬性做為一般搜尋關鍵字。此功能會使用輸入的屬性，搜尋LDAP伺服器的通訊錄。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb28.gif" alt="28" class="opnumber" width="25" height="16">輸入在搜尋電子郵件地址時要使用的屬性，然後按下<span class="softkeyma">[確定]</span>。</p><p class="supplement">屬性值可能隨伺服器環境而變更。設定屬性值之前，請先確定屬性值符合您的伺服器環境。</p><p class="supplement">當搜尋LDAP伺服器通訊錄中的電子郵件地址時，您可以將項目保留空白，但不能將屬性保留空白。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb29.gif" alt="29" class="opnumber" width="25" height="16">按下[<img src="../../manual_common_image/iconst1.084.gif" alt="向下鍵" width="10" height="16">次頁]。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb30.gif" alt="30" class="opnumber" width="25" height="16">按下「屬性」下的<span class="softkeyma">[變更]</span>。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb31.gif" alt="31" class="opnumber" width="25" height="16">輸入在搜尋電子郵件地址時要使用的屬性，然後按下<span class="softkeyma">[確定]</span>。</p><p class="supplement">屬性值可能隨伺服器環境而變更。設定屬性之前，請先確定屬性符合您的伺服器環境。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb32.gif" alt="32" class="opnumber" width="25" height="16">按下「主要顯示」下的<span class="softkeyma">[變更]</span>。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb33.gif" alt="33" class="opnumber" width="25" height="16">輸入主要顯示，然後按下<span class="softkeyma">[確定]</span>。</p><p class="supplement">登記的「主要顯示」會顯示為搜尋LDAP的關鍵字。</p><ul>
+<li><p>沒有主要顯示登記</p><p id="delete007"><img src="../image/nvce019.gif" alt="操作面板畫面圖示說明" width="231" height="164"></p></li>
+<li><p>有主要顯示登記</p><p id="delete008"><img src="../image/nvce020.gif" alt="操作面板畫面圖示說明" width="231" height="164"></p></li>
+</ul>
+<p class="supplement">按鍵不會出現在搜尋畫面上，除非「屬性」和「主要顯示」均已登記。請確定您已登記這兩者以使用選用搜尋。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb34.gif" alt="34" class="opnumber" width="25" height="16">按下<span class="softkeyma">[確定]</span>鍵。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb35.gif" alt="35" class="opnumber" width="25" height="16">按下<span class="softkeyma">[結束]</span>鍵。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb36.gif" alt="36" class="opnumber" width="25" height="16">按下<span class="hardkeyma">[使用者工具／計數器]</span>鍵。</p></div>
+</div>
+<div class="reference">
+<p><img src="../../web/gen/zh-tw-i_ref.gif" alt="參考" width="73" height="16"></p><ul>
+<li><p><a href="./0217.htm">登記SMTP和LDAP驗證</a><a href="./0217.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a></p></li>
+</ul>
+</div>
+</div>
+<div id="footertable">
+<div class="footer" id="move"><a href="#headertable" title="頁首"><img src="../../web/gen/i_top.gif" alt="" width="21" height="15"><span class="footertext">返回頁首</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0025.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="footertext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0027.htm" title="下一個主題"><span class="footertext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="footer" id="line"><img src="../../web/gen/bg_f.gif" alt="" width="760" height="1"></div>
+<div class="footer" id="copy"><address>Copyright &copy; 2011 Ricoh Company, Ltd. All rights reserved.</address></div>
+</div>
+</div></body>
+</html>

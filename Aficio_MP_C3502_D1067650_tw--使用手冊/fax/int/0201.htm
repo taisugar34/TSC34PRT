@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-TW">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>日誌</title>
+<link rel="stylesheet" title="標準" href="../../web/css/def_exp_body_i.css" type="text/css">
+<link rel="alternate stylesheet" title="簡易" href="../../web/css/sim_exp_body_i.css" type="text/css">
+<!--[if IE 6]>
+<style>
+body.bodypage {
+   font-size : 80%;
+}
+div.bodypage {
+   font-size : 125%;
+}
+</style>
+<![endif]-->
+<link rel="contents" href="index.htm">
+<link rel="prev" href="0200.htm"><link rel="next" href="0202.htm">
+<script type="text/javascript" language="JavaScript1.2" src="../../booklist/js/split.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/cookie.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/honbun-i.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/summary.js"></script>
+<script type="text/javascript" language="JavaScript1.2">
+<!--
+read_css();
+// -->
+</script>
+</head>
+<body class="bodypage" onLoad="initialize();">
+<div class="bodypage">
+<div id="headertable">
+<div class="header" id="jump"><a href="#headerend"><img src="../../web/gen/jump_space.gif" alt="略過標頭" width="1" height="52"></a></div>
+<div class="header" id="logo"><a href="http://www.ricoh.com/"><img src="../../manual_common_image/lnricoh.gif" title="回到RICOH首頁" alt="RICOH" width="130" height="54"></a><img src="../../common/image/logo-p.gif" alt="Aficio MP C2051/C2551" width="380" height="54"></div>
+
+<div class="header" id="navi"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊"><img src="../../web/gen/i_index.gif" alt="" width="22" height="15"><span class="headernavitext">參考手冊</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="javascript:back_to_index()" title="內容"><img src="../../web/gen/i_book.gif" alt="" width="22" height="15"><span class="headernavitext">內容</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0200.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="headernavitext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0202.htm" title="下一個主題"><span class="headernavitext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="header" id="search"><form name="search" onSubmit="SearchWord(); return false;"><label class="headersearchtext" for="seek" accesskey="0"><input class="headersearchtext" type="text" id="seek" name="seek" value="" size="16" maxlength="128" tabindex="0"></label><a class="linkimage" onmouseover="Mover('btn','sea','1')" onmouseout="Mout('btn','sea','1')" href="javascript:SearchWord();"><img src="../../web/gen/zh-tw-search.gif" title="開始搜尋" alt="搜尋" name="btnsea1" width="50" height="20"></a></form></div>
+<div class="header" id="pref"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="#" onclick="goto_preference('int', 'preferences.htm')" title="變更參考手冊設定"><img src="../../web/gen/i_pref.gif" alt="" width="21" height="15"><span class="headernavitext">設定</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="help.htm" title="說明"><img src="../../web/gen/i_help.gif" alt="說明" width="15" height="15"></a></div>
+<div class="header" id="headerend">&nbsp;</div>
+</div>
+<p class="breadcrumbs"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊">首頁</a>&nbsp;&gt;&nbsp;<a href="javascript:back_to_index()" title="內容">傳真機參考手冊</a>&nbsp;&gt;&nbsp;<a href="index_chap_04.htm">變更／確認通訊資訊</a>&nbsp;&gt;&nbsp;<a href="0196.htm">列印日誌</a>&nbsp;&gt;&nbsp;日誌</p>
+<div class="moduleh1" id="replace">
+<h1>日誌</h1><div class="summary"><p>本節說明日誌所列印的項目。</p></div><div class="graphiccallout">
+<p><img src="../image/bzr034.gif" alt="日誌已編號插圖之圖示說明" width="500" height="471"></p><ol>
+<li><p class="term">列印日期</p><p>顯示報告列印時的日期與時間。</p></li>
+<li><p class="term">登錄的傳真表頭</p><p>顯示登錄列印的傳送者名稱。</p></li>
+<li><p class="term">日期</p><p>顯示傳送或接收日期。</p></li>
+<li><p class="term">時間</p><p>顯示傳送或接收的開始時間。</p></li>
+<li><p class="term">另一端</p><ul>
+<li><p>傳真目的地</p><p>顯示另一端所登錄的（顯示）名稱。</p><p>如果未登錄（顯示）名稱時，則會顯示登錄的傳真號碼。視傳送者的設定而定，可能不會顯示傳真號碼。</p><p>如果另一端沒有登錄名稱，也沒登錄傳真號碼，傳送時則會顯示已輸入的傳真號碼或目的地清單已登錄的名稱。</p></li>
+<li><p>網路傳真／電子郵件目的地</p><p>傳送時，會顯示目的地清單已登錄的電子郵件地址或名稱。接收時，會顯示傳送者的電子郵件地址。</p><p>廣播傳送時，會在電子郵件地址或目的地名稱後，顯示目的地數目。</p><p>文件由電腦傳送至本機時，會顯示「--LAN－Fax --&gt;」。若要檢查文件是否傳送至接收者，請確認檔案編號是否相同。</p></li>
+<li><p>IP－Fax目的地</p><p>顯示目的地清單已登錄的IP－Fax目的地或名稱。接收報告中會顯示傳真目的地詳細資訊。</p></li>
+<li><p>資料夾目的地</p><p>顯示目的地清單中登錄的名稱。</p></li>
+</ul>
+</li>
+<li><p class="term">通訊模式</p><ul>
+<li><p>傳真傳送與接收</p><p>在線路類型後，送出傳真顯示為「T」，傳入傳真顯示為「R」，通訊模式則以字母或符號顯示。</p></li>
+<li><p>網路傳真／電子郵件傳送與接收</p><p><img src="../image/bzr005.gif" alt="日誌圖示說明" width="25" height="14">（電子郵件標記）後，送出的電子郵件顯示為「T」；傳入的電子郵件顯示為「R」，通訊模式則以字母或符號顯示。從網路傳真目的地傳送的文件會透過網路傳真接收，從電子郵件目的地傳送的文件會透過以電子郵件傳送列印功能接收。「Q」表示「傳送模式」中設定接收通知的外送電子郵件，「A」表示接收通知電子郵件。</p></li>
+<li><p>IP－Fax傳送與接收</p><p><img src="../image/bzr006.gif" alt="日誌圖示說明" width="27" height="14">（IP－Fax標記）後，送出的傳真顯示為「T」，傳入的傳真顯示為「R」，通訊模式則以字母或符號顯示。</p></li>
+<li><p>資料夾目的地</p><p><img src="../image/bzr007.gif" alt="日誌圖示說明" width="19" height="13">（資料夾標記）後，送出傳真顯示為「T」，而通訊模式則以字母或符號顯示。</p></li>
+</ul>
+</li>
+<li><p class="term">通訊時間</p><p>顯示傳送或接收所花的時間。</p></li>
+<li><p class="term">頁數</p><p>顯示已傳送或接收的頁數。</p></li>
+<li><p class="term">通訊結果</p><p>顯示傳送或接收的結果。</p><p>OK：所有的頁面都已正確傳送或接收。使用「傳送模式」啟動接收通知時，會顯示接收通知的回條。已傳閱的已接收文件其結果前會有「<img src="../../manual_common_image/char_ric87.gif" alt="加" width="11" height="16">」號。</p><p>－－：網路傳真或電子郵件文件已傳送到本機登錄的電子郵件伺服器。（但這並不表示電子郵件已傳送。）使用LAN－Fax時，會顯示電腦與本機器通訊的結果。</p><p>E：發生通訊錯誤。</p><p>D: 通訊時電源中斷。有些傳真文件並未傳送出去。</p></li>
+<li><p class="term">使用者名稱</p><p>顯示傳送者名稱。</p></li>
+<li><p class="term">檔案編號</p><p>顯示檔案管理編號。</p></li>
+</ol>
+</div>
+<div class="note">
+<p><img src="../../web/gen/zh-tw-i_not.gif" alt="註" width="73" height="16"></p><ul>
+<li><p>如果是以電子郵件傳送列印接收，頁數欄位永遠都會印上「P.1」，而通訊模式欄位會印上代表標準解析度的「S」，不受實際頁數／解析度影響。</p></li>
+<li><p>「另一端」中顯示的資訊，視您賦予的優先順序而定，可以是機器本身通訊錄中登記的傳真號碼或名稱，或是另一端登記的傳真號碼或名稱。關於賦予日誌資訊項目優先順序的詳細資訊，請聯絡您的服務代表。</p></li>
+</ul>
+</div>
+</div>
+<div id="footertable">
+<div class="footer" id="move"><a href="#headertable" title="頁首"><img src="../../web/gen/i_top.gif" alt="" width="21" height="15"><span class="footertext">返回頁首</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0200.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="footertext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0202.htm" title="下一個主題"><span class="footertext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="footer" id="line"><img src="../../web/gen/bg_f.gif" alt="" width="760" height="1"></div>
+<div class="footer" id="copy"><address>Copyright &copy; 2011 Ricoh Company, Ltd. All rights reserved.</address></div>
+</div>
+</div></body>
+</html>

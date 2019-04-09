@@ -1,0 +1,124 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-TW">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>列印文件</title>
+<link rel="stylesheet" title="標準" href="../../web/css/def_exp_body_i.css" type="text/css">
+<link rel="alternate stylesheet" title="簡易" href="../../web/css/sim_exp_body_i.css" type="text/css">
+<!--[if IE 6]>
+<style>
+body.bodypage {
+   font-size : 80%;
+}
+div.bodypage {
+   font-size : 125%;
+}
+</style>
+<![endif]-->
+<link rel="contents" href="index.htm">
+<link rel="prev" href="0075.htm"><link rel="next" href="0077.htm">
+<script type="text/javascript" language="JavaScript1.2" src="../../booklist/js/split.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/cookie.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/honbun-i.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/summary.js"></script>
+<script type="text/javascript" language="JavaScript1.2">
+<!--
+read_css();
+// -->
+</script>
+</head>
+<body class="bodypage" onLoad="initialize();">
+<div class="bodypage">
+<div id="headertable">
+<div class="header" id="jump"><a href="#headerend"><img src="../../web/gen/jump_space.gif" alt="略過標頭" width="1" height="52"></a></div>
+<div class="header" id="logo"><a href="http://www.ricoh.com/"><img src="../../manual_common_image/lnricoh.gif" title="回到RICOH首頁" alt="RICOH" width="130" height="54"></a><img src="../../common/image/logo-p.gif" alt="Aficio MP C2051/C2551" width="380" height="54"></div>
+
+<div class="header" id="navi"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊"><img src="../../web/gen/i_index.gif" alt="" width="22" height="15"><span class="headernavitext">參考手冊</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="javascript:back_to_index()" title="內容"><img src="../../web/gen/i_book.gif" alt="" width="22" height="15"><span class="headernavitext">內容</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0075.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="headernavitext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0077.htm" title="下一個主題"><span class="headernavitext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="header" id="search"><form name="search" onSubmit="SearchWord(); return false;"><label class="headersearchtext" for="seek" accesskey="0"><input class="headersearchtext" type="text" id="seek" name="seek" value="" size="16" maxlength="128" tabindex="0"></label><a class="linkimage" onmouseover="Mover('btn','sea','1')" onmouseout="Mout('btn','sea','1')" href="javascript:SearchWord();"><img src="../../web/gen/zh-tw-search.gif" title="開始搜尋" alt="搜尋" name="btnsea1" width="50" height="20"></a></form></div>
+<div class="header" id="pref"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="#" onclick="goto_preference('int', 'preferences.htm')" title="變更參考手冊設定"><img src="../../web/gen/i_pref.gif" alt="" width="21" height="15"><span class="headernavitext">設定</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="help.htm" title="說明"><img src="../../web/gen/i_help.gif" alt="說明" width="15" height="15"></a></div>
+<div class="header" id="headerend">&nbsp;</div>
+</div>
+<p class="breadcrumbs"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊">首頁</a>&nbsp;&gt;&nbsp;<a href="javascript:back_to_index()" title="內容">PostScript3 補充資料</a>&nbsp;&gt;&nbsp;<a href="index_chap_03.htm">使用PostScript 3印表機驅動程式</a>&nbsp;&gt;&nbsp;列印文件</p>
+<div class="moduleh1" id="replace">
+<h1>列印文件</h1><div class="summary"><p>本文件說明透過安裝PPD檔案新增的特定印表機功能和選單。</p></div><p>在Windows中，您可使用<span class="softkeypc">[細節設定]</span>索引標籤上的<span class="softkeypc">[選單:]</span>圖示設定各種印表機功能；在Mac OS X中，列印對話方塊也具有相同的功能。</p><p>此處以Windows XP及Mac OS X 10.5作為各作業系統系列的範例。不同作業系統版本的程序可能略有不同。</p><div class="important">
+<p><img src="../../web/gen/zh-tw-i_imp.gif" alt="重要訊息" width="73" height="16"></p><ul>
+<li><p>若使用Macintosh，需要安裝Mac OS X 10.2或更新版本。</p></li>
+<li><p>PageMaker 等具有自己的驅動程式的應用程式，不支援以下功能：</p><ul>
+<li><p>樣本列印</p></li>
+<li><p>機密列印</p></li>
+<li><p>保留列印</p></li>
+<li><p>儲存列印</p></li>
+<li><p>儲存並列印</p></li>
+<li><p>文件伺服器</p></li>
+<li><p>使用者代碼</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="note">
+<p><img src="../../web/gen/zh-tw-i_not.gif" alt="註" width="73" height="16"></p><ul>
+<li><p>根據Mac OS X的版本差異，列印對話方塊的顯示畫面可能有所不同。</p></li>
+<li><p>若是使用Windows作業系統，您在<span class="softkeypc">[細節設定]</span>索引標籤上指定的部分設定，可登錄至單鍵預設清單中。從<span class="softkeypc">[單鍵預設]</span>索引標籤中，也可以修改在單鍵預設清單中登錄的設定。關於單鍵預設的詳細資訊，請參閱「進行印表機設定 － 單鍵預設」。</p></li>
+</ul>
+</div>
+<div class="reference">
+<p><img src="../../web/gen/zh-tw-i_ref.gif" alt="參考" width="73" height="16"></p><ul>
+<li><p><a href="./0068.htm">進行印表機設定 － 單鍵預設</a><a href="./0068.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a></p></li>
+</ul>
+</div>
+<div class="relation">
+<p class="title">相關主題</p>
+<a href="0077.htm">工作種類</a><a href="0077.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0087.htm">使用者代碼</a><a href="0087.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0088.htm">方向</a><a href="0088.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0089.htm">彩色模式</a><a href="0089.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0090.htm">旋轉 180 度</a><a href="0090.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0091.htm">份數</a><a href="0091.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0092.htm">紙張尺寸</a><a href="0092.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0093.htm">縮小／放大</a><a href="0093.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0094.htm">紙張來源</a><a href="0094.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0095.htm">媒體類型</a><a href="0095.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0096.htm">以紙張尺寸為準</a><a href="0096.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0097.htm">每張頁數／書冊</a><a href="0097.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0098.htm">版面配置</a><a href="0098.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0099.htm">騎馬釘裝訂邊緣</a><a href="0099.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0100.htm">頁面順序</a><a href="0100.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0101.htm">列印框線</a><a href="0101.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0102.htm">雙面列印</a><a href="0102.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0105.htm">解析度</a><a href="0105.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0106.htm">色階漸層</a><a href="0106.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0107.htm">抖色</a><a href="0107.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0108.htm">影像柔和</a><a href="0108.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0109.htm">灰階重製</a><a href="0109.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0110.htm">Black Over Print</a><a href="0110.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0111.htm">色彩控制</a><a href="0111.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0112.htm">色彩設定</a><a href="0112.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0113.htm">色彩設定檔</a><a href="0113.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0114.htm">分成CMYK</a><a href="0114.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0115.htm">CMYK模擬設定檔</a><a href="0115.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0116.htm">列印模式／省碳</a><a href="0116.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0117.htm">無障礙的色彩管理</a><a href="0117.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0118.htm">目的地</a><a href="0118.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0119.htm">分頁</a><a href="0119.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0120.htm">頁面輸出順序</a><a href="0120.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0121.htm">整合原稿方向</a><a href="0121.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0122.htm">裝訂</a><a href="0122.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0123.htm">打孔</a><a href="0123.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0124.htm">浮水印</a><a href="0124.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0125.htm">浮水印文字</a><a href="0125.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0126.htm">浮水印字型</a><a href="0126.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0127.htm">浮水印尺寸</a><a href="0127.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0128.htm">浮水印角度</a><a href="0128.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+<a href="0129.htm">浮水印樣式</a><a href="0129.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a><br>
+</div>
+</div>
+<div id="footertable">
+<div class="footer" id="move"><a href="#headertable" title="頁首"><img src="../../web/gen/i_top.gif" alt="" width="21" height="15"><span class="footertext">返回頁首</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0075.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="footertext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0077.htm" title="下一個主題"><span class="footertext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="footer" id="line"><img src="../../web/gen/bg_f.gif" alt="" width="760" height="1"></div>
+<div class="footer" id="copy"><address>Copyright &copy; 2011 Ricoh Company, Ltd. All rights reserved.</address></div>
+</div>
+</div></body>
+</html>

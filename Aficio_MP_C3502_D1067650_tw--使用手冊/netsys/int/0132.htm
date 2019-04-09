@@ -1,0 +1,100 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-TW">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>8021x</title>
+<link rel="stylesheet" title="標準" href="../../web/css/def_exp_body_i.css" type="text/css">
+<link rel="alternate stylesheet" title="簡易" href="../../web/css/sim_exp_body_i.css" type="text/css">
+<!--[if IE 6]>
+<style>
+body.bodypage {
+   font-size : 80%;
+}
+div.bodypage {
+   font-size : 125%;
+}
+</style>
+<![endif]-->
+<link rel="contents" href="index.htm">
+<link rel="prev" href="0131.htm"><link rel="next" href="0133.htm">
+<script type="text/javascript" language="JavaScript1.2" src="../../booklist/js/split.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/cookie.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/honbun-i.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/summary.js"></script>
+<script type="text/javascript" language="JavaScript1.2">
+<!--
+read_css();
+// -->
+</script>
+</head>
+<body class="bodypage" onLoad="initialize();">
+<div class="bodypage">
+<div id="headertable">
+<div class="header" id="jump"><a href="#headerend"><img src="../../web/gen/jump_space.gif" alt="略過標頭" width="1" height="52"></a></div>
+<div class="header" id="logo"><a href="http://www.ricoh.com/"><img src="../../manual_common_image/lnricoh.gif" title="回到RICOH首頁" alt="RICOH" width="130" height="54"></a><img src="../../common/image/logo-p.gif" alt="Aficio MP C2051/C2551" width="380" height="54"></div>
+
+<div class="header" id="navi"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊"><img src="../../web/gen/i_index.gif" alt="" width="22" height="15"><span class="headernavitext">參考手冊</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="javascript:back_to_index()" title="內容"><img src="../../web/gen/i_book.gif" alt="" width="22" height="15"><span class="headernavitext">內容</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0131.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="headernavitext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0133.htm" title="下一個主題"><span class="headernavitext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="header" id="search"><form name="search" onSubmit="SearchWord(); return false;"><label class="headersearchtext" for="seek" accesskey="0"><input class="headersearchtext" type="text" id="seek" name="seek" value="" size="16" maxlength="128" tabindex="0"></label><a class="linkimage" onmouseover="Mover('btn','sea','1')" onmouseout="Mout('btn','sea','1')" href="javascript:SearchWord();"><img src="../../web/gen/zh-tw-search.gif" title="開始搜尋" alt="搜尋" name="btnsea1" width="50" height="20"></a></form></div>
+<div class="header" id="pref"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="#" onclick="goto_preference('int', 'preferences.htm')" title="變更參考手冊設定"><img src="../../web/gen/i_pref.gif" alt="" width="21" height="15"><span class="headernavitext">設定</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="help.htm" title="說明"><img src="../../web/gen/i_help.gif" alt="說明" width="15" height="15"></a></div>
+<div class="header" id="headerend">&nbsp;</div>
+</div>
+<p class="breadcrumbs"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊">首頁</a>&nbsp;&gt;&nbsp;<a href="javascript:back_to_index()" title="內容">網路及系統設定參考手冊</a>&nbsp;&gt;&nbsp;<a href="index_chap_04.htm">監視與設定本機</a>&nbsp;&gt;&nbsp;<a href="0088.htm">透過telnet進行遠端維護</a>&nbsp;&gt;&nbsp;8021x</p>
+<div class="moduleh1" id="replace">
+<h1>8021x</h1><div class="summary"><p>使用「8021x」命令，以顯示IEEE 802.1x相關資訊。</p></div><div class="listterm">
+<p class="term">檢視設定</p><div class="listitem"><p><kbd class="literallayout">msh&gt;&nbsp;8021x</kbd></p></div><p class="term">設定</p><div class="listitem"><p><kbd class="literallayout">msh&gt;&nbsp;8021x&nbsp;&quot;parameter&quot;</kbd></p><table border="1" frame="box" rules="all" cellpadding="5">
+<tr>
+<th align="center" valign="middle" width="49%"><p>參數</p></th>
+<th align="center" valign="middle" width="50%"><p>已設定的值</p></th>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>eap {tls|ttls|leap|peap} {chap|mschap|mschapv2|pap|md5|tls}</p></td>
+<td align="left" valign="top" width="50%"><p>您可以指定EAP驗證種類。</p><p>tls: EAP-TLS（預設）</p><p>ttls: EAP-TTLS</p><p>leap: LEAP</p><p>peap: PEAP</p><p>chap, mschap, mschapv2, pap, md5和tls是第2階段方法的設定，在使用EAP-TTLS或PEAP時，必須設定其中一項。 </p><p>使用其他EAP驗證種類時，請勿進行這些設定。 </p><p>如果選擇EAP-TTLS，可以選擇chap、mschap、mschapv2、pap或md5。</p><p>如果選擇PEAP，則可以選擇mschapv2或tls。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Username「字元字串」</p></td>
+<td align="left" valign="top" width="50%"><p>可以為Radius伺服器指定登入使用者名稱。 </p><p>可以使用的字元：ASCII 0x20-0x7e（31個位元組）。</p><p>預設值為空白。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>Username2「字元字串」</p></td>
+<td align="left" valign="top" width="50%"><p>可以指定第2階段使用者名稱進行EAP-TTLS／PEAP第2階段驗證。</p><p>可以使用的字元：ASCII 0x20-0x7e（31個位元組）。</p><p>預設值為空白。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>domain「字元字串」</p></td>
+<td align="left" valign="top" width="50%"><p>可以為Radius伺服器指定登入網域名稱。</p><p>可以輸入的字元為ASCII 0x20-0x7e（64個位元組），但不能輸入「@」或「\」。</p><p>預設值為空白。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>password「字元字串」</p></td>
+<td align="left" valign="top" width="50%"><p>可以為Radius伺服器指定登入密碼。</p><p>可以使用的字元：ASCII 0x20-0x7e（128個位元組）。預設值為空白。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>srvcert {on|off}</p></td>
+<td align="left" valign="top" width="50%"><p>您可以設定伺服器憑證。</p><p>預設值為「關閉」。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>imca {on|off}</p></td>
+<td align="left" valign="top" width="50%"><p>具有中間的憑證權限時，可以啟用或停用憑證。預設值為「關閉」。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>srvid「字元字串」</p></td>
+<td align="left" valign="top" width="50%"><p>可以設定憑證伺服器的伺服器ID和子網域。</p><p>可以使用的字元：ASCII 0x20-0x7e（128個位元組）。預設值為空白。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>subdomain {on|off}</p></td>
+<td align="left" valign="top" width="50%"><p>在子網域可以指定是否允許使用者存取機器。</p><p>預設值為「關閉」。</p></td>
+</tr>
+<tr>
+<td align="left" valign="top" width="49%"><p>claer {單項指令|all}</p></td>
+<td align="left" valign="top" width="50%"><p>將選取的設定返回至其預設值。</p><p>如果指定「all」，則所有的設定都將恢復至預設值。但乙太網路IEEE 802.1x驗證狀態（啟用或停用）不會被初始化。</p></td>
+</tr>
+</table></div></div>
+</div>
+<div id="footertable">
+<div class="footer" id="move"><a href="#headertable" title="頁首"><img src="../../web/gen/i_top.gif" alt="" width="21" height="15"><span class="footertext">返回頁首</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0131.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="footertext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0133.htm" title="下一個主題"><span class="footertext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="footer" id="line"><img src="../../web/gen/bg_f.gif" alt="" width="760" height="1"></div>
+<div class="footer" id="copy"><address>Copyright &copy; 2011 Ricoh Company, Ltd. All rights reserved.</address></div>
+</div>
+</div></body>
+</html>

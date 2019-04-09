@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html lang="zh-TW">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>根據傳送者自動轉傳</title>
+<link rel="stylesheet" title="標準" href="../../web/css/def_exp_body_i.css" type="text/css">
+<link rel="alternate stylesheet" title="簡易" href="../../web/css/sim_exp_body_i.css" type="text/css">
+<!--[if IE 6]>
+<style>
+body.bodypage {
+   font-size : 80%;
+}
+div.bodypage {
+   font-size : 125%;
+}
+</style>
+<![endif]-->
+<link rel="contents" href="index.htm">
+<link rel="prev" href="0327.htm"><link rel="next" href="0329.htm">
+<script type="text/javascript" language="JavaScript1.2" src="../../booklist/js/split.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/cookie.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/honbun-i.js"></script>
+<script type="text/javascript" language="JavaScript1.2" src="../js/summary.js"></script>
+<script type="text/javascript" language="JavaScript1.2">
+<!--
+read_css();
+// -->
+</script>
+</head>
+<body class="bodypage" onLoad="initialize();">
+<div class="bodypage">
+<div id="headertable">
+<div class="header" id="jump"><a href="#headerend"><img src="../../web/gen/jump_space.gif" alt="略過標頭" width="1" height="52"></a></div>
+<div class="header" id="logo"><a href="http://www.ricoh.com/"><img src="../../manual_common_image/lnricoh.gif" title="回到RICOH首頁" alt="RICOH" width="130" height="54"></a><img src="../../common/image/logo-p.gif" alt="Aficio MP C2051/C2551" width="380" height="54"></div>
+
+<div class="header" id="navi"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊"><img src="../../web/gen/i_index.gif" alt="" width="22" height="15"><span class="headernavitext">參考手冊</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="javascript:back_to_index()" title="內容"><img src="../../web/gen/i_book.gif" alt="" width="22" height="15"><span class="headernavitext">內容</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0327.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="headernavitext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0329.htm" title="下一個主題"><span class="headernavitext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="header" id="search"><form name="search" onSubmit="SearchWord(); return false;"><label class="headersearchtext" for="seek" accesskey="0"><input class="headersearchtext" type="text" id="seek" name="seek" value="" size="16" maxlength="128" tabindex="0"></label><a class="linkimage" onmouseover="Mover('btn','sea','1')" onmouseout="Mout('btn','sea','1')" href="javascript:SearchWord();"><img src="../../web/gen/zh-tw-search.gif" title="開始搜尋" alt="搜尋" name="btnsea1" width="50" height="20"></a></form></div>
+<div class="header" id="pref"><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="#" onclick="goto_preference('int', 'preferences.htm')" title="變更參考手冊設定"><img src="../../web/gen/i_pref.gif" alt="" width="21" height="15"><span class="headernavitext">設定</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="help.htm" title="說明"><img src="../../web/gen/i_help.gif" alt="說明" width="15" height="15"></a></div>
+<div class="header" id="headerend">&nbsp;</div>
+</div>
+<p class="breadcrumbs"><a href="../../booklist/int/index_book.htm" title="本產品參考手冊">首頁</a>&nbsp;&gt;&nbsp;<a href="javascript:back_to_index()" title="內容">傳真機參考手冊</a>&nbsp;&gt;&nbsp;<a href="index_chap_07.htm">傳真功能</a>&nbsp;&gt;&nbsp;<a href="0318.htm">以不同方式對待的特殊傳送者</a>&nbsp;&gt;&nbsp;根據傳送者自動轉傳</p>
+<div class="moduleh1" id="replace">
+<h1>根據傳送者自動轉傳</h1><div class="summary"><p>本節說明如何指定自動轉傳。</p><p>登錄特殊傳送者時指定。</p></div><div class="important">
+<p><img src="../../web/gen/zh-tw-i_imp.gif" alt="重要訊息" width="73" height="16"></p><ul>
+<li><p>對於每一個特殊傳送者，可登記一個自動轉傳目的地。若要登記兩個或以上的自動轉傳目的地，請使用群組目的地。一個群組中最多可指定498個目的地。</p></li>
+</ul>
+</div>
+<div class="procedure">
+<div>
+<p class="operation"><img src="../../web/int/numb01.gif" alt="1" class="opnumber" width="25" height="16">按下<span class="softkeyma">[根據傳送者自動轉傳]</span>。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb02.gif" alt="2" class="opnumber" width="25" height="16">選擇<span class="softkeyma">[開啟]</span>或<span class="softkeyma">[關閉]</span>。</p><p class="supplement">如果您選擇<span class="softkeyma">[關閉]</span>，請繼續步驟7。</p><p id="delete369"><img src="../image/fvcg3013.gif" alt="操作面板畫面圖示說明" width="231" height="164"></p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb03.gif" alt="3" class="opnumber" width="25" height="16">使用目的地清單來指定終端接收者，然後按下<span class="softkeyma">[確定]</span>。</p><p id="delete370"><img src="../image/faa035.gif" alt="操作面板畫面圖示說明" width="231" height="164"></p><p class="supplement">按下傳送種類索引標籤，在傳真號碼、網路傳真目的地、電子郵件地址和資料夾目的地之間切換目的地。</p><p class="supplement">IP－Fax目的地會出現在傳真目的地清單中。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb04.gif" alt="4" class="opnumber" width="25" height="16">按下<span class="softkeyma">[安全]</span>。</p><p class="supplement">如果未指定安全功能，請繼續步驟七。</p><p class="supplement">安全設定使用S／MIME驗證。關於安全設定的詳細資訊，請諮詢您的管理員。</p><p id="delete371"><img src="../image/fvcg3014.gif" alt="操作面板畫面圖示說明" width="231" height="164"></p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb05.gif" alt="5" class="opnumber" width="25" height="16">選擇安全功能。</p><p id="delete372"><img src="../image/faa037.gif" alt="操作面板畫面圖示說明" width="231" height="164"></p><p class="supplement">若要指定自動轉傳時的文件加密，請按下<span class="softkeyma">[加密]</span>。若要使用加密功能，必須將位址儲存於通訊錄中，並啟用加密選項。關於加密的詳細資訊，請諮詢您的管理員。</p><p class="supplement">若要在轉傳文件時附加簽名，請按下<span class="softkeyma">[簽名]</span>。關於簽名的詳細資訊，請諮詢您的管理員。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb06.gif" alt="6" class="opnumber" width="25" height="16">按下<span class="softkeyma">[確定]</span>鍵。</p></div>
+<div>
+<p class="operation"><img src="../../web/int/numb07.gif" alt="7" class="opnumber" width="25" height="16">按下<span class="softkeyma">[確定]</span>鍵。</p></div>
+</div>
+<div class="note">
+<p><img src="../../web/gen/zh-tw-i_not.gif" alt="註" width="73" height="16"></p><ul>
+<li><p>選擇<span class="softkeyma">[與基本設定相同]</span>所產生的設定，與針對「接收設定」的「自動轉傳」所進行的設定相同。</p></li>
+<li><p>如果您已指定自動轉傳的資料夾目的地，您可以指定用來自動轉傳的檔案格式。請參閱「參數設定」（參數21，位元3）。</p></li>
+<li><p>從目的地清單中，刪除指定為自動轉傳目的地的目的地，會刪除自動轉傳目的地的設定，因此必須再次登記設定。當目的地變更時，文件會傳送到新的目的地。如果無指定類型的目的地，可設定要做為替代目的地的目的地。請參閱「參數設定」（參數32，位元0）。</p></li>
+<li><p>在加密設定中，選擇<span class="softkeypc">[全部加密]</span>，即會傳送加密的電子郵件，不受<span class="softkeyma">[安全]</span>中加密設定的影響。關於加密的詳細資訊，請諮詢您的管理員。</p></li>
+<li><p>視Web Image Monitor上的S／MINE設定而定，電子簽章受限於下列方式。關於電子簽章的詳細資訊，請諮詢您的管理員。</p><ul>
+<li><p>如果設定<span class="softkeypc">[個別設定]</span>：</p><p>您可以在<span class="softkeyma">[安全]</span>中設定<span class="softkeyma">[簽名]</span>，並在每次傳送時，將電子簽章附加到電子郵件。</p></li>
+<li><p>如果設定<span class="softkeypc">[不要用簽名]</span>：</p><p>即使按下<span class="softkeyma">[安全]</span>，<span class="softkeyma">[簽名]</span>也不會出現。</p></li>
+<li><p>如果設定<span class="softkeypc">[使用簽名]</span>：</p><p>傳送電子郵件時，會附加電子簽章。<span class="softkeyma">[安全]</span>中的<span class="softkeyma">[簽名]</span>設定無法被取消。</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="reference">
+<p><img src="../../web/gen/zh-tw-i_ref.gif" alt="參考" width="73" height="16"></p><ul>
+<li><p><a href="./0315.htm">參數設定</a><a href="./0315.htm" target="_blank"><img src="../../web/int/newwin.gif" title="在新視窗開啟連結" alt="" width="14" height="10"></a></p></li>
+</ul>
+</div>
+</div>
+<div id="footertable">
+<div class="footer" id="move"><a href="#headertable" title="頁首"><img src="../../web/gen/i_top.gif" alt="" width="21" height="15"><span class="footertext">返回頁首</span></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"><a href="0327.htm" title="上一個主題"><img src="../../web/gen/i_prev.gif" alt="" width="13" height="15"><span class="footertext">上一個</span></a><img src="../../web/gen/i_dot.gif" alt="" width="14" height="15"><a href="0329.htm" title="下一個主題"><span class="footertext">下一個</span><img src="../../web/gen/i_next.gif" alt="" width="13" height="15"></a><img src="../../web/gen/sep.gif" alt="" width="11" height="15"></div>
+<div class="footer" id="line"><img src="../../web/gen/bg_f.gif" alt="" width="760" height="1"></div>
+<div class="footer" id="copy"><address>Copyright &copy; 2011 Ricoh Company, Ltd. All rights reserved.</address></div>
+</div>
+</div></body>
+</html>
